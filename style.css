@@ -13,4 +13,132 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+/* Set the header background */
+header {
+   background-image: url(images/florence.jpg);
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+}
+/* Style the nav container with logo */
+nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+}
+
+/* Position navigation list */
+nav ul {
+   margin-left: 80px;
+}
+
+/* Style list items */
+nav li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+/* Style navigation links */
+nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+
+nav a:visited {
+   color: #8662c7;
+}
+
+nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+}/* Position hero content */
+header div {
+   margin: 100px 0 0 80px;
+   color: white;
+}
+
+/* Style hero heading */
+header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+}
+
+/* Style hero paragraph */
+header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+}
+
+/* Style hero button */
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+header div a:hover {
+   background-color: #8662c7;
+}/* Style card container */
+.card {
+   float: left;
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+}
+
+/* Style card content */
+.card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+}
+
+.card div.description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}/* Style social section */
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+}
+
+/* Style icon containers */
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+}
+
+/* Style individual icons */
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}/* Replace float-based layout with flexbox */
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+   flex: 0 0 calc(33.333% - 10px);
+   margin: 10px 0;
+   background-color: white;
+}
