@@ -14,3 +14,99 @@ body {
 }
 
 /* add styles here */
+/* Navigation Bar */
+nav {
+   background-color: #333;
+   color: white;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+}
+
+nav li {
+   margin: 0;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+nav a:hover {
+   color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+   background-image: url('images/florence.jpg'); 
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+}
+
+.hero h1 {
+   font-size: 3rem;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Cards Section */
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 2rem auto;
+   gap: 2rem;
+   max-width: 1200px;
+}
+
+.card {
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 300px;
+   padding: 1rem;
+   text-align: center;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+   font-size: 1.5rem;
+   color: #333;
+   margin-bottom: 0.5rem;
+}
+
+.card p {
+   font-size: 1rem;
+   color: #666;
+   margin-bottom: 1rem;
+}
+
+.card a {
+   display: inline-block;
+   margin-top: 1rem;
+   color: #00bcd4;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.card a:hover {
+   text-decoration: underline;
+}
