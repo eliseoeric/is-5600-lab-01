@@ -4,13 +4,140 @@
 }
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
-   padding: 0;
+   padding-top: 60;
 }
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
-   background-color: #F0F4F8;
+   background-color: #f8f9f9;
    font-weight: 300;
 }
+/* Navigation Bar */
 
-/* add styles here */
+#topbar {
+   background-color: #004080; /* Navy Blue */
+   padding: 0;
+   margin: 0; /* Remove any default margin */
+   width: 100%; /* Ensure it spans the full width of the page */
+   height: 70px ; 
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for visual appeal */
+   position: fixed; /* Make the navigation bar stick to the top */
+   top: 0;
+   z-index: 1000; /* Ensure it stays on top of other elements */
+   display: flex; /* Flexbox layout to align items */
+   align-items: center; /* Vertically center the buttons */
+}
+#topbar ul {
+   list-style-type: none;
+   display: flex; /* Horizontal layout */
+   justify-content: space-between;
+   width: 100%;/* Ensure the navigation buttons span the full width */
+   margin: 0;
+   padding: 0 20px; /* Add padding only inside the bar */
+   align-items: center;
+}
+#topbar li a {
+   color: rgb(114, 194, 241);
+   text-decoration: none;
+   padding: 15px 20px;
+   font-weight: 600;
+   transition: background-color 0.3s ease;
+   line-height: 1; /* Ensure vertical alignment of text */
+   display: inline-block;
+}
+#topbar li a:hover {
+   background-color: #0056b3; /* Lighter blue */
+   border-radius: 5px;
+}
+
+/* Hero Section */
+header {
+   text-align: center;
+   background: url('https://s.marketwatch.com/public/resources/images/MW-HE536_airpla_ZG_20190225131547.jpg') no-repeat center center/cover; /* Add a hero image */
+   color: rgb(44, 152, 240);
+   padding: 100px 0px;
+
+}
+header h2 {
+   font-size: 2.5rem;
+   font-weight: 800;
+   margin-bottom: 10px;
+}
+header p {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+header a {
+   background-color: #03101b; 
+   color: rgb(206, 166, 86);
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: 600;
+   transition: background-color 0.3s ease;
+}
+header a:hover {
+   background-color: #0056b3; 
+}
+
+/* Card Layout */
+main {
+   display: flex; /* Flexbox for row layout */
+   justify-content: space-around;
+   flex-wrap: wrap; /* Responsive design */
+   padding: 20px;
+}
+.card {
+   background-color: rgb(232, 183, 119);
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   width: 30%; /* Adjust width for three cards in a row */
+   margin-bottom: 20px;
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.card:hover {
+   transform: translateY(-5px); /* Lift effect on hover */
+}
+.card img {
+   width: 100%;
+   height: auto;
+   border-bottom: 2px solid #ddd;
+}
+.card div {
+   padding: 15px;
+}
+.card h3 {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+.card p.description {
+   font-size: 1rem;
+   margin-bottom: 10px;
+   color: #555;
+}
+.card p.social {
+   font-size: 0.9rem;
+   color: #777;
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+}
+
+.card p.social:before { 
+   content: "❤️"; /* Add heart icon before the first number */
+   margin-right: 5px;
+ }
+ 
+ .card p.social:after { 
+   content: "💬"; /* Add comment icon after the second number */
+   margin-left: 5px;
+ }
+
+.heart,
+.comment {
+   font-weight: 600;
+   color: #ff6600; /* Orange for icons */
+}
+
