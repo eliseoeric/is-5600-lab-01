@@ -1,11 +1,12 @@
-
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
@@ -13,4 +14,81 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+/* Navigation Bar */
+nav {
+   background-color: #333;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+}
+
+nav ul li {
+   margin: 0 15px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   transition: color 0.3s;
+}
+
+nav ul li a:hover {
+   color: #f4a261;
+}
+
+/* Hero Section */
+.hero {
+   background: url('hero-image.jpg') no-repeat center center/cover;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+}
+
+.hero h1 {
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+/* Card Section */
+.cards {
+   display: flex;
+   justify-content: space-around;
+   padding: 40px;
+}
+
+.card {
+   background: white;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   text-align: center;
+   width: 30%;
+   transition: transform 0.3s;
+}
+
+.card:hover {
+   transform: scale(1.05);
+}
+
+.card h2 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.card p {
+   font-size: 1rem;
+   color: #555;
+}
+git add .
+git commit -m "Styled the home page"
+git push origin main
