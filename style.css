@@ -2,15 +2,152 @@
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
+
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
+   font-family: 'Open Sans', sans-serif; 
+   background-color: #F0F4F8; 
    font-weight: 300;
 }
 
-/* add styles here */
+header {
+   background-image: url('images/hero.jpg'); 
+   background-size: cover; 
+   background-position: center; 
+   width: 100%;
+   min-height: 500px; 
+}
+
+header div {
+   margin: 5px 0 0 80px; 
+   color: black; 
+}
+
+header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem; 
+}
+
+
+header p {
+   font-size: 24px; 
+   margin-bottom: 1.5rem; 
+}
+
+
+nav {
+   background-image: url(images/logo.svg); 
+   background-size: 60px; 
+   background-repeat: no-repeat; 
+   background-position: 10px 5px; 
+   padding: 20px; 
+   height: 100px; 
+}
+
+
+nav ul {
+   margin-left: 80px; 
+}
+
+nav li {
+   display: inline-block; 
+   list-style: none; 
+}
+
+
+nav a {
+   color: #51279b; 
+   text-decoration: none; 
+   padding: 10px; 
+   font-weight: 600; 
+}
+
+
+nav a:visited {
+   color: #8662c7; 
+}
+
+
+nav a:hover {
+   color: #8662c7; 
+   text-decoration: underline; 
+}
+
+
+header div a {
+   background-color: #51279b; 
+   color: white; 
+   padding: 10px 20px; 
+   text-decoration: none; 
+   border-radius: 5px; 
+}
+
+
+header div a:hover {
+   background-color: #8662c7; 
+}
+
+
+main {
+   display: flex; 
+   flex-wrap: wrap; 
+   justify-content: space-between; 
+   margin-top: -120px; 
+   padding-top: 0; 
+}
+
+
+.card {
+   width: calc(33% - 10px); 
+   margin: 5px 0; 
+   background-color: white; 
+   margin-top: 0; 
+}
+
+
+.card img {
+   width: 100%; 
+}
+
+
+.card div {
+   padding: 20px 5px;
+}
+
+.card .description {
+   font-size: 12px; 
+}
+
+
+.card h3 {
+   font-size: 14px; 
+}
+
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px; 
+}
+
+
+.social span {
+   background-size: contain; 
+   background-repeat: no-repeat;
+   padding-left: 25px; 
+   margin-right: 10px; 
+}
+
+
+.social .heart {
+   background-image: url(images/heart.png); 
+}
+
+
+.social .comment {
+   background-image: url(images/comment.png); 
+}
