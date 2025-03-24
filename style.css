@@ -1,143 +1,149 @@
-/* Reset and Base Styles */
+
 * {
-   box-sizing: border-box;
- }
- 
- body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
- }
- 
- body {
-   font-family: 'Open Sans', sans-serif;
-   background-color: #F0F4F8;
-   font-weight: 300;
-   line-height: 1.6;
-   color: #333;
- }
- 
- /* Navigation Bar */
- #topbar {
-   background-color: #004080;
-   padding: 15px 0;
- }
- 
- #topbar ul {
-   list-style: none;
-   display: flex;
-   justify-content: center;
-   gap: 30px;
- }
- 
- #topbar ul li a {
-   color: white;
-   text-decoration: none;
-   font-weight: 600;
-   font-size: 1rem;
-   transition: color 0.3s ease;
- }
- 
- #topbar ul li a:hover {
-   color: #FFCC00;
- }
- 
- /* Hero Section */
- header > div {
-   background: url('images/hero.jpg') no-repeat center center/cover;
-   height: 300px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   color: white;
-   padding: 20px;
- }
- 
- header h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 10px;
-   color: #000;
- }
- 
- header p {
-   font-size: 1.2rem;
-   margin-bottom: 20px;
-   color: #070202;
- }
- 
- header a {
-   background-color: #004080;
-   color: white;
-   padding: 10px 20px;
-   text-decoration: none;
-   border-radius: 5px;
-   font-weight: 600;
-   transition: background-color 0.3s ease;
- }
- 
- header a:hover {
-   background-color: #002a66;
- }
- 
- /* Main Content - Card Layout */
- main {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 20px;
-   padding: 40px 20px;
- }
- 
- .card {
-   background-color: white;
-   border-radius: 10px;
-   overflow: hidden;
-   width: 300px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease;
- }
- 
- .card:hover {
-   transform: translateY(-5px);
- }
- 
- .card img {
-   width: 100%;
-   height: auto;
-   display: block;
- }
- 
- .card div {
-   padding: 15px;
- }
- 
- .card h3 {
-   font-size: 1.2rem;
-   font-weight: 600;
-   margin-bottom: 10px;
- }
- 
- .card .description {
-   color: #555;
-   font-size: 0.95rem;
-   margin-bottom: 10px;
- }
- 
- .card .social {
-   display: flex;
-   justify-content: space-between;
-   font-size: 0.9rem;
-   color: #777;
- }
- 
- /* Icons using emojis */
- .heart::before {
-   content: "❤️ ";
- }
- 
- .comment::before {
-   content: "💬 ";
- }
- 
+  box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #F0F4F8;
+  font-weight: 300;
+}
+
+/* Header */
+header {
+  background-image: url('./images/florence.jpg');
+  background-size: cover; 
+  min-height: 500px;
+  width: 100%; 
+}
+
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul {
+  margin-left: 80px;
+}
+
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+nav a:visited {
+  color: #8662c7;
+}
+
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
+header div {
+  margin: 100px 0 0 80px;
+  color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+}
+header h2 {
+font-size: 48px;
+margin-bottom: 0.5rem;
+}
+header p {
+font-size: 24px;
+margin-bottom: 1.5rem;
+}
+
+/* We can to target header.div.a because if we taget simply a, then these styles will affect our navigation links as well */
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header div a:hover {
+    background-color: #8662c7;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin: 0 10px; 
+}
+
+/* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+.card {
+  /* float: left;
+  width: calc(33% - 10px); */
+  flex-grow: 1;
+  margin: 10px 5px;
+  background-color: white;
+}
+
+.card div {
+  padding: 20px 5px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p.description {
+  font-size: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+}
+
+.social .heart {
+  background-image: url(./images/heart.png);
+}
+
+.social .comment {
+  background-image: url(./images/comment.png);
+}
+
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-basis: calc(100% - 20px); /* One card per row on small screens */
+  }
+}
+
