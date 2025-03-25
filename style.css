@@ -1,16 +1,168 @@
-
+/* General Styles */
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
    background-color: #F0F4F8;
-   font-weight: 300;
+   font-weight: 400;
 }
 
-/* add styles here */
+/* Header Styling */
+header {
+   background-image: url('./images/florence.jpg');
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding-left: 60px;
+   padding-top: 0px;
+}
+
+/* Navigation Bar */
+nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+}
+
+nav ul {
+   margin-left: 80px;
+   display: flex;
+   gap: 15px;
+}
+
+nav li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+nav a {
+   font-family: 'Arial', sans-serif;
+   font-size: 16px;
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+
+nav a:visited {
+   color: #8662c7;
+}
+
+nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+}
+
+/* Hero Section */
+header div {
+   margin: 80px 0 0 80px;
+   color: white;
+   max-width: 50%;
+   text-align: left;
+   white-space: nowrap;
+}
+
+header h2 {
+   /*font-family: 'Arial', sans-serif; */
+   font-family: 'Open Sans', sans-serif;
+   font-size: 48px;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+}
+
+header p {
+   font-family: 'Arial', sans-serif;
+   font-size: 24px;
+   font-weight: 300;
+   margin-bottom: 1.5rem;
+}
+
+header div a {
+   background-color: #51279b;
+   color: white;
+   font-family: 'Arial', sans-serif;
+   font-size: 18px;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+header div a:hover {
+   background-color: #8662c7;
+}
+
+/* Card Layout using Flexbox */
+main {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   padding: 20px;
+}
+
+.card {
+   flex: 1;
+   max-width: calc(33% - 10px);
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   margin: 10px 5px;
+}
+
+.card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+}
+
+.card div.description {
+   font-family: 'Arial', sans-serif;
+   font-size: 12px;
+}
+
+.card h3 {
+   font-family: 'Arial', sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+/* Social Icons */
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+   display: flex;
+   gap: 10px;
+}
+
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+}
+
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}
