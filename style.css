@@ -1,16 +1,40 @@
 
-* {
+*{
+
    box-sizing: border-box;
 }
+main {
+   display: flex;
+   justify-content: space-between; /* Adjusts spacing between cards */
+   flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+   gap: 10px; /* Adds space between cards */
+ }
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effect */
+}
+
+header div a:hover {
+  background-color: #8662c7;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
+@@ -12,5 +33,15 @@ body {
    background-color: #F0F4F8;
    font-weight: 300;
 }
+.card {
+   flex: 1; /* Ensures equal distribution */
+   max-width: calc(33.33% - 10px); /* Prevents exceeding container width */
+   background-color: white;
+   margin: 10px 0;
+ }
 
-/* add styles here */
