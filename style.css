@@ -1,16 +1,163 @@
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: url('./images/florence.jpg'); 
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 80px;
+  box-sizing: border-box;
+  background-color: #F0F4F8;
+  font-weight: 300;
+}
+
+
+nav {
+  background-color: rgba(87, 33, 33, 0.5); 
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
 }
 
 /* add styles here */
+nav ul {
+  display: flex;
+  margin: 1;
+  padding: 1;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: rgb(156, 129, 196);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e9f3cf; 
+}
+
+
+header div {
+  max-width: 600px;
+  text-align: left;
+}
+
+header h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header div a {
+  background-color: #ab84df; 
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header div a:hover {
+  background-color: #706841;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 15px 45px;
+  background-color: #f4f4f4; 
+  box-sizing: border-box;
+}
+
+.card {
+  width: 30%; 
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(70, 69, 69, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 1px solid #c0a3a3;
+}
+
+.card div {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.card div.description {
+  font-size: 14px;
+  color: #947676;
+  margin-bottom: 10px;
+}
+
+.social {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+
+.social .heart {
+  background-image: url('./images/heart.png'); 
+}
+
+.social .comment {
+  background-image: url('./images/comment.png'); 
+}
