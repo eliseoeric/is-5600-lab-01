@@ -13,4 +13,74 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background-color: #F0F4F8;
+   color: #444;
+   text-align: center;
+}
+
+a {
+   text-decoration: none;
+   color: #007BEF;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* Navigation Bar */
+#topbar {
+   background-color: #2C3E50;
+   padding: 13px 0;
+}
+
+#topbar ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+#topbar li {
+   display: inline;
+}
+
+#topbar a {
+   color: white;
+   font-weight: 600;
+   padding: 10px;
+}
+
+/* Hero Section */
+header {
+   background: url('images/hero.jpg') no-repeat center center/cover;
+   color: white;
+   padding: 100px 20px;
+}
+
+header h2 {
+   font-size: 2.5em;
+   font-weight: 800;
+}
+
+header p {
+   font-size: 1.2em;
+   margin: 10px 0;
+}
+
+header a {
+   display: inline-block;
+   background: #007BFF;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 10px;
+   font-weight: 600;
+}
+
+header a:hover {
+   background: #0056b3;
+}
+
