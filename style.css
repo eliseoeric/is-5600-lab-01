@@ -1,4 +1,4 @@
-
+@@ -1,16 +1,148 @@
 * {
    box-sizing: border-box;
 }
@@ -14,3 +14,135 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url(./images/florence.jpg); /* Set to florence.jpg */
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+   color: white;
+}
+
+nav {
+   background-image: url(./images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin-left: 80px;
+}
+
+nav li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+
+nav a:visited {
+   color: #8662c7;
+}
+
+nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+}
+
+/* Hero Section Styling */
+header div {
+   margin: 100px 0 0 80px;
+   color: white;
+}
+
+header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+}
+
+header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+}
+
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+header div a:hover {
+   background-color: #8662c7;
+}
+
+/* Main Layout and Card Styling */
+main {
+   display: flex;
+   justify-content: space-between; 
+   padding: 40px 20px;
+   gap: 20px; 
+}
+
+.card {
+   flex: 1; 
+   max-width: calc(33.33% - 20px); 
+   margin: 0; 
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+.card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+   font-size: 14px;
+   margin: 15px 0 10px;
+}
+
+.card .description {
+   font-size: 12px;
+   color: #666;
+   margin-bottom: 15px;
+}
+
+/* Social Icons Styling */
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+   color: #999;
+}
+
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+}
+
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}
