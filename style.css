@@ -1,16 +1,201 @@
-
 * {
+    box-sizing: border-box;
+ }
+ body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+ }
+ body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: #F0F4F8;
+    font-weight: 300;
+ }
+ 
+ /* add styles here */
+ /* Base Reset */
+ * {
    box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+ }
+ 
+ body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
-}
-body {
+ }
+ 
+ body {
    font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
-}
-
-/* add styles here */
+ }
+ 
+ /* Header with background image */
+ header {
+   background-image: url('images/florence.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 500px;
+ }
+ 
+ /* Navigation with logo as background */
+ nav {
+   background-image: url('images/logo.svg');
+   background-repeat: no-repeat;
+   background-position: 10px center;
+   background-size: 60px;
+   padding-left: 80px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+ }
+ 
+ nav ul {
+   list-style: none;
+   display: flex;
+   gap: 25px;
+ }
+ 
+ nav li {
+   display: inline-block;
+ }
+ 
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+   transition: color 0.3s ease;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+ 
+ /* Hero Text Content */
+ header div {
+   margin: 100px 0 0 80px;
+   color: white;
+   max-width: 600px;
+ }
+ 
+ header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+   font-weight: 800;
+ }
+ 
+ header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+ }
+ 
+ header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: 600;
+   transition: background-color 0.3s ease;
+ }
+ 
+ header div a:hover {
+   background-color: #8662c7;
+ }
+ 
+ /* Cards */
+ main {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 40px 20px;
+   gap: 20px;
+ }
+ 
+ .card {
+   background-color: white;
+   width: calc(33.33% - 20px);
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+ }
+ 
+ .card:hover {
+   transform: translateY(-5px);
+ }
+ 
+ .card img {
+   width: 100%;
+   display: block;
+ }
+ 
+ .card div {
+   padding: 20px;
+ }
+ 
+ .card h3 {
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   color: #1e293b;
+ }
+ 
+ .card .description {
+   font-size: 14px;
+   color: #475569;
+   margin-bottom: 10px;
+ }
+ 
+ /* Social Icons */
+ .social {
+   display: flex;
+   gap: 15px;
+   font-size: 12px;
+   color: #666;
+   margin-top: 1rem;
+ }
+ 
+ .social span {
+   background-size: 16px;
+   background-repeat: no-repeat;
+   background-position: left center;
+   padding-left: 22px;
+ }
+ 
+ .heart {
+   background-image: url('images/heart.png');
+ }
+ 
+ .comment {
+   background-image: url('images/comment.png');
+ }
+ 
+ /* Responsive Cards */
+ @media (max-width: 900px) {
+   .card {
+     width: calc(50% - 20px);
+   }
+ }
+ 
+ @media (max-width: 600px) {
+   nav ul {
+     flex-direction: column;
+     gap: 10px;
+   }
+ 
+   .card {
+     width: 100%;
+   }
+ 
+   header div {
+     margin: 60px 20px;
+     text-align: center;
+   }
+ }
