@@ -1,58 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-   <title>Lab04</title>		
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-<header>
-   <nav id="topbar">
-      <ul>
-         <li><a href="#">HOME</a></li>
-         <li><a href="#">BROWSE</a></li>
-         <li><a href="#">DESTINATIONS</a></li>
-         <li><a href="#">FLIGHTS</a></li>
-         <li><a href="#">SEARCH</a></li>
-         <li><a href="#">ABOUT</a></li>
-      </ul>
-   </nav>
-   <div>
-      <h2>Now is the time to explore</h2>
-      <p>Visit the land of your dreams</p>
-      <a href="#">LEARN MORE</a>
-   </div>
-</header>  
+nav {
+    background-color: #333; /* Dark background */
+    padding: 15px; /* Add space around items */
+    text-align: center;
+}
 
-<main>
-   <section class="card">
-      <img src="images/card1.jpg" alt="Nova Scotia" />
-      <div>
-         
-         <h3>Explore Nova Scotia</h3>
-         <p class="description">On board a small sailing ship leaving Lunenburg.</p>
-         <p class="social"><span class="heart">112</span><span class="comment">23</span></p>
-      </div>
-   </section>
-   <section class="card">
-      <img src="images/card2.jpg" alt="Santorini" />
-      <div>
-         
-         <h3>Dusk on Santorini</h3>
-         <p class="description">Devoted yourself to the sunset!.</p>
-         <p class="social"><span class="heart">2313</span><span class="comment">18</span></p>
-      </div>
-   </section>   
-   <section class="card">
-      <img src="images/card3.jpg" alt="Chicago" />
-      <div>
-         
-         <h3>Amsterdam Flower Market</h3>
-         <p class="description">The only floating flower market in the world.</p>
-         <p class="social"><span class="heart">14</span><span class="comment">5</span></p>
-      </div>
-   </section>   
-</main>
-</body>
-</html>
+nav a {
+    color: white; /* Text color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4a261; /* Highlight on hover */
+}
+.hero {
+    background-image: url('your-image.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black; /* Adds a shadow for readability */
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
