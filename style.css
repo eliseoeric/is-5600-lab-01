@@ -14,3 +14,147 @@ body {
 }
 
 /* add styles here */
+/* Navigation styling */
+nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 20px center;
+   padding: 20px 0;
+   height: 100px;
+   display: flex;
+   align-items: center;
+}
+
+nav ul {
+   margin-left: 100px;
+   display: flex;
+   gap: 30px;
+}
+
+nav li {
+   list-style-type: none;
+}
+
+nav a {
+   color: #3b2d6b;
+   text-decoration: none;
+   padding: 8px 12px;
+   font-weight: 600;
+   font-size: 16px;
+   transition: color 0.3s, border-bottom 0.3s;
+   border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+   color: #6f4fc9;
+   border-bottom: 2px solid #6f4fc9;
+}
+
+nav a:visited {
+   color: #6f4fc9;
+}
+
+/* Header hero section */
+header {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/hero.jpg) no-repeat center/cover;
+   color: #fff;
+   padding: 150px 80px 100px 80px;
+}
+
+header div {
+   max-width: 500px;
+}
+
+header h2 {
+   font-size: 52px;
+   line-height: 1.2;
+   margin-bottom: 0.7rem;
+}
+
+header p {
+   font-size: 22px;
+   margin-bottom: 1.8rem;
+   color: #f0e9ff;
+}
+
+header div a {
+   background-color: #3b2d6b;
+   color: #fff;
+   padding: 12px 24px;
+   text-decoration: none;
+   border-radius: 6px;
+   font-weight: 700;
+   transition: background-color 0.3s;
+}
+
+header div a:hover {
+   background-color: #6f4fc9;
+}
+
+/* Card layout styling */
+main {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   padding: 50px 20px;
+   background-color: #f7f7fa;
+}
+
+.card {
+   width: 300px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s, box-shadow 0.3s;
+   overflow: hidden;
+}
+
+.card:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+   width: 100%;
+   display: block;
+}
+
+.card div {
+   padding: 16px;
+}
+
+.card h3 {
+   font-size: 18px;
+   margin-bottom: 8px;
+   color: #3b2d6b;
+}
+
+.card .description {
+   font-size: 14px;
+   color: #666;
+   margin-bottom: 1rem;
+}
+
+.social {
+   display: flex;
+   gap: 15px;
+   font-size: 14px;
+   align-items: center;
+}
+
+.social span {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   color: #999;
+}
+
+.social .heart::before {
+   content: "❤️";
+}
+
+.social .comment::before {
+   content: "💬";
+}
