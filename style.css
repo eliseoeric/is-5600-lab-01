@@ -14,3 +14,152 @@ body {
 }
 
 /* add styles here */
+
+
+* {
+   box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+   background-color: #F0F4F8;
+   font-weight: 300;
+}
+
+/* add styles here */
+/* Style the header */
+
+header {
+   background-image: url('images/florence.jpg'); /* Use the uploaded image */
+   background-size: cover;
+   width: 100%;
+   min-height: 600px;
+ }
+
+
+
+ /* Style the navigation with logo */
+ nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+ }
+
+ /* Style the navigation links */
+ nav li {
+   display: inline-block;
+   list-style-type: none;
+ }
+
+ nav ul {
+   margin-left: 80px;
+ }
+
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+
+ nav a:visited {
+   color: #8662c7;
+ }
+
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+
+ /* Style the hero text */
+ header div {
+   margin: 100px 0 0 80px;
+   color: white;
+ }
+
+ header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+ }
+
+ header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+ }
+
+ /* Style the button */
+ header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+
+ header div a:hover {
+   background-color: #8662c7;
+ }
+
+ /* Style the cards */
+ .card {
+   float: left;
+   display: inline-block;
+   width: calc(22% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+ }
+
+ .card div {
+   padding: 20px 5px;
+ }
+
+ .card img {
+   width: 100%;
+ }
+
+ .card div.description {
+   font-size: 12px;
+ }
+
+ .card h3 {
+   font-size: 14px;
+ }
+
+ /* Style the social icons */
+ .social {
+   margin-top: 1rem;
+   font-size: 12px;
+ }
+
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+ }
+
+ .social .heart {
+   background-image: url(./images/heart.png);
+ }
+
+ .social .comment {
+   background-image: url(./images/comment.png);
+ }
+
+ /* Flexbox layout for the cards */
+ main {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ main > .card {
+   flex: 1 1 30%;
+   margin: 10px;
+ }
