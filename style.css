@@ -1,11 +1,12 @@
-
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
@@ -13,4 +14,137 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+header {
+   background-image: url('images/florence.jpg');
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+}
+
+nav {
+   background-image: url('images/logo.svg'); 
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px; 
+   padding: 20px;
+   height: 100px;
+}
+
+nav li {
+   display: inline-block;         
+   list-style-type: none;          
+}
+
+nav a {
+   color: #51279b;         
+   text-decoration: none;    
+   padding: 10px;            
+   font-weight: 600;        
+}
+
+nav a:visited {
+   color: #8662C7;                    
+}
+
+nav a:hover {
+   color: #8662C7;   
+   text-decoration: underline;               
+}
+
+nav a:active {
+   color: #51279b;           
+   text-decoration: underline; 
+}
+
+nav ul {
+   margin-left: 80px; 
+   margin-top: 6px; 
+}
+
+header div {
+   margin: 100px 0 0 80px;  
+   color: white;            
+}
+
+header h2 {
+   font-size: 48px;          
+   margin-bottom: 0.5rem;    
+}
+
+header p {
+   font-size: 24px;          
+   margin-bottom: 1.5rem;    
+}
+
+header div a {
+   background-color: #51279b;  
+   color: white;               
+   padding: 10px 20px;         
+   text-decoration: none;      
+   border-radius: 5px;         
+}
+
+header div a:hover {
+   background-color: #8662c7;  
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 20px;
+}
+
+.card {
+   width: calc(33.333% - 10px);
+   margin-bottom: 20px;
+   background-color: white;
+   padding: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+}
+
+.card h3 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.card .description {
+   font-size: 16px;
+   color: #666;
+}
+
+.card .social {
+   font-size: 14px;
+   color: #888;
+   margin-top: 15px;
+}
+
+.card .heart, .card .comment {
+   margin-right: 10px;
+}
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+}
+
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+}
+
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}
