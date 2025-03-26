@@ -6,6 +6,21 @@ body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
+.hero {
+   background-image: url('hero.jpg');
+   height: 300px;
+   background-size: cover;
+}
+.card {
+   width: 30%;
+   padding: 20px;
+   border: 1px solid #ddd;
+   margin: 10px;
+   display: inline-block;
+}
+
+
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
