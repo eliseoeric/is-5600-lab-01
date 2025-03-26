@@ -8,51 +8,100 @@
 </head>
 <body>
 <header>
-   <nav id="topbar">
-      <ul>
-         <li><a href="#">HOME</a></li>
-         <li><a href="#">BROWSE</a></li>
-         <li><a href="#">DESTINATIONS</a></li>
-         <li><a href="#">FLIGHTS</a></li>
-         <li><a href="#">SEARCH</a></li>
-         <li><a href="#">ABOUT</a></li>
-      </ul>
-   </nav>
-   <div>
-      <h2>Now is the time to explore</h2>
-      <p>Visit the land of your dreams</p>
-      <a href="#">LEARN MORE</a>
-   </div>
-</header>  
+   nav {
+      background-image: url(images/logo.svg);
+      background-size: 60px;
+      background-repeat: no-repeat;
+      background-position: 10px 5px;
+      padding: 20px;
+      height: 100px;
+    }
+    nav li {
+      display: inline-block;
+      list-style-type: none;
+    }
+    nav ul {
+      margin-left: 80px;
+    }
+    nav a {
+      color: #51279b;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+    }
+    
+    nav a:visited {
+      color: #8662c7;
+    }
+    
+    nav a:hover {
+      color: #8662c7;
+      text-decoration: underline;
+    }
+    header div {
+      margin: 100px 0 0 80px;
+    }
+    header div {
+      margin: 100px 0 0 80px;
+      color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+  }
+  header h2 {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+  header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+ 
+ header div a:hover {
+     background-color: #8662c7;
+ }
+ .card {
+   float: left;
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+ }
+ .card div {
+   padding: 20px 5px;
+}
 
-<main>
-   <section class="card">
-      <img src="images/card1.jpg" alt="Nova Scotia" />
-      <div>
-         
-         <h3>Explore Nova Scotia</h3>
-         <p class="description">On board a small sailing ship leaving Lunenburg.</p>
-         <p class="social"><span class="heart">112</span><span class="comment">23</span></p>
-      </div>
-   </section>
-   <section class="card">
-      <img src="images/card2.jpg" alt="Santorini" />
-      <div>
-         
-         <h3>Dusk on Santorini</h3>
-         <p class="description">Devoted yourself to the sunset!.</p>
-         <p class="social"><span class="heart">2313</span><span class="comment">18</span></p>
-      </div>
-   </section>   
-   <section class="card">
-      <img src="images/card3.jpg" alt="Chicago" />
-      <div>
-         
-         <h3>Amsterdam Flower Market</h3>
-         <p class="description">The only floating flower market in the world.</p>
-         <p class="social"><span class="heart">14</span><span class="comment">5</span></p>
-      </div>
-   </section>   
-</main>
-</body>
-</html>
+.card img {
+   width: 100%;
+}
+
+.card div.description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+ }
+ 
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+ }
+ 
+ .social .heart {
+   background-image: url(https://images.app.goo.gl/CZiPL3ge9PCDCELP6);
+ }
+ 
+ .social .comment {
+   background-image: url(.https://images.app.goo.gl/CZiPL3ge9PCDCELP6);
+ }
