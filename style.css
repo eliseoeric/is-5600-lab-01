@@ -14,3 +14,101 @@ body {
 }
 
 /* add styles here */
+/* Basic reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+/* 1) HEADER: big hero background */
+header {
+  background-image: url("images/florence.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+/* 2) NAV: logo in top-left + space for it */
+nav {
+  background-image: url("images/logo.svg");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;  /* x y */
+  padding: 20px;
+  height: 100px;
+}
+
+/* 3) NAV LINKS: horizontal, no bullets */
+nav ul { margin: 0; padding: 0; }
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+/* 4) Move the <ul> away from the logo so it doesn’t overlap */
+nav ul { margin-left: 80px; }
+
+/* 5) Link styles (normal / visited / hover) */
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+nav a:visited { color: #8662c7; }
+nav a:hover { color: #8662c7; text-decoration: underline; }
+
+/* 6) HERO TEXT block position + color */
+header div { margin: 100px 0 0 80px; color: white; }
+
+/* 7) HERO TEXT sizes */
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* 8) HERO BUTTON (it's an <a>) */
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+header div a:hover { background-color: #8662c7; }
+
+/* 9) CARDS (README asks for floats) */
+.card {
+  float: left;
+  display: inline-block;
+  width: calc(33% - 10px);
+  margin: 10px 5px;
+  background-color: white;
+}
+
+/* Clear the floats so the parent wraps the cards */
+main::after { content: ""; display: table; clear: both; }
+
+/* 10) CARD CONTENT */
+.card div { padding: 20px 5px; }
+.card img { width: 100%; display: block; }
+.card div.description { font-size: 12px; }
+.card h3 { font-size: 14px; margin: 0 0 8px; }
+
+/* 11) SOCIAL ICONS (heart + comment) */
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+.social .heart   { background-image: url("images/heart.png"); }
+.social .comment { background-image: url("images/comment.png"); }
