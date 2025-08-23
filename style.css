@@ -14,3 +14,132 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url(images/florence.jpg);
+   background-size: cover;
+   background-position: top center; 
+   width: 100%;
+   min-height: 550px;                
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+ 
+ nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px center;
+   padding: 30px 20px;                 
+   display: flex;
+   align-items: center;
+ }
+ 
+ nav ul {
+   margin: 0 0 0 80px; 
+   display: flex;
+   gap: 20px;
+ }
+ 
+ nav li {
+   list-style-type: none;
+ }
+ 
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+ 
+ header div {
+   margin: 100px 0 0 80px;
+ }
+ 
+ header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+ }
+ 
+ header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+ }
+ 
+ header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+ 
+ header div a:hover {
+   background-color: #8662c7;
+ }
+ 
+ main {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 20px;
+ }
+ 
+ .card {
+   flex: 1;
+   background-color: white;
+   border-radius: 6px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+   overflow: hidden;
+ }
+ 
+ .card img {
+   width: 100%;
+   display: block;
+ }
+ 
+ .card div {
+   padding: 15px;
+ }
+ 
+ .card h3 {
+   font-size: 16px;
+   margin-bottom: 8px;
+ }
+ 
+ .card div.description {
+   font-size: 14px;
+   color: #333;
+ }
+ 
+ .social {
+   margin-top: 1rem;
+   font-size: 12px;
+   display: flex;
+   gap: 15px;
+ }
+ 
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   line-height: 20px;
+ }
+ 
+ .social .heart {
+   background-image: url(./images/heart.png);
+ }
+ 
+ .social .comment {
+   background-image: url(./images/comment.png);
+ }
