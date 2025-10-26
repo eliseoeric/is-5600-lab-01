@@ -1,13 +1,16 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "home-page-prototype",
+  "version": "1.0.0",
+  "description": "Lab 01 - Home Page Prototype using HTML and CSS",
+  "main": "index.html",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "npx live-server --port=3000 --open=./index.html",
+    "dev": "npx live-server --port=3000 --open=./index.html"
   },
-  "devDependencies": {
-    "vite": "^2.9.9"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
