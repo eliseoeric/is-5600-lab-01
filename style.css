@@ -1,16 +1,132 @@
-
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* add styles here */
+body {
+    margin: 0;
+    background-color: #f4f4f4; 
+}
+main {
+    padding: 20px 80px;
+}
+
+header {
+    background-image: url(./images/florence.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+}
+nav {
+    background-image: url(images/logo.svg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    padding: 20px;
+    height: 100px;
+}
+nav ul {
+    margin-left: 80px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav a {
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+nav a:visited {
+    color: #eee;
+}
+
+nav a:hover {
+    color: #8662c7;
+    text-decoration: underline;
+}
+header div {
+    margin: 100px 0 0 80px; 
+    color: white; 
+}
+
+header h2 {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+header div a {
+    background-color: #51279b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+header div a:hover {
+    background-color: #8662c7;
+}
+.card {
+    float: left;
+    display: inline-block;
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card div {
+    padding: 15px; 
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+    font-size: 14px; 
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card div.description {
+    font-size: 12px;
+}
+.social {
+    margin-top: 1rem;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social span {
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social .heart {
+    background-image: url(./images/heart.png);
+}
+
+.social .comment {
+    background-image: url(./images/comment.png);
+}
