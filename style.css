@@ -1,16 +1,163 @@
-
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #F0F4F8;
+  font-weight: 300;
 }
 
-/* add styles here */
+/* ===== Header (hero) ===== */
+header {
+  background-image: url(images/hero.jpg); /* change filename if your image differs */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+/* ===== Navigation (logo + bar) ===== */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+/* nav list sits to the right of the logo */
+nav ul {
+  margin-left: 80px;
+  padding-left: 0;
+}
+
+/* horizontal list, no bullets */
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* link colors/states */
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+nav a:visited {
+  color: #8662c7;
+}
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
+
+/* ===== Hero text block ===== */
+header div {
+  margin: 100px 0 0 80px; /* vertically down & aligned with nav */
+  color: white; /* cascades to children */
+}
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* anchor styled as button in hero only */
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+header div a:hover {
+  background-color: #8662c7;
+}
+
+/* ===== Cards (float version per instructions) ===== */
+.card {
+  float: left;
+  display: inline-block;
+  width: calc(33% - 10px);
+  margin: 10px 5px;
+  background-color: white;
+}
+
+/* card content */
+.card img {
+  width: 100%;
+  display: block;
+}
+.card div {
+  padding: 20px 5px;
+}
+.card div.description {
+  font-size: 12px;
+}
+.card h3 {
+  font-size: 14px;
+}
+
+/* social icons row */
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px; /* precise spacing */
+}
+.social .heart {
+  background-image: url(./images/heart.png);
+}
+.social .comment {
+  background-image: url(./images/comment.png);
+}
+
+/* ===== Optional: Flexbox refactor (replace floats, removes right gap) ===== */
+/* If your cards are inside <main>, this will make a neat, gapless grid. */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;          /* controls spacing between cards */
+  padding: 10px 5px;
+  align-items: stretch;
+}
+main .card {
+  float: none;        /* disable float when using flex */
+  display: block;
+  margin: 0;
+  width: auto;
+  flex: 1 1 calc(33.333% - 10px);
+}
+
+/* responsive steps */
+@media (max-width: 900px) {
+  main .card { flex: 1 1 calc(50% - 10px); }
+}
+@media (max-width: 600px) {
+  main .card { flex: 1 1 100%; }
+  header h2 { font-size: 36px; }
+  header p  { font-size: 18px; }
+  nav ul { margin-left: 70px; }
+}
+
+/* clearfix safety for legacy float contexts */
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
