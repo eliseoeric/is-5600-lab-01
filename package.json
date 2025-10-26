@@ -1,13 +1,13 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "is-5600-lab01-gradient-flow",
+  "version": "1.0.0",
+  "description": "Lab 01 | Home Page Prototype - Gradient Flow Theme",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "npx live-server ."
   },
-  "devDependencies": {
-    "vite": "^2.9.9"
+  "author": "Member 12 - Gradient Flow",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }

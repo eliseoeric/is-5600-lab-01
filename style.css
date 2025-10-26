@@ -1,16 +1,109 @@
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7ff;
 }
 
-/* add styles here */
+/* HEADER */
+header {
+  background-image: linear-gradient(135deg, #8a2be2, #ff5f6d), url(images/florence.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  min-height: 520px;
+  color: #fff;
+}
+
+/* NAVIGATION */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  height: 90px;
+  padding: 20px;
+}
+nav ul {
+  margin-left: 100px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffe082;
+}
+
+/* HERO SECTION */
+header div {
+  margin: 130px 0 0 100px;
+}
+header h2 {
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+header p {
+  font-size: 22px;
+  color: #f0f0f0;
+}
+header div a {
+  background-color: #ffe082;
+  color: #4a148c;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+header div a:hover {
+  background-color: #ffca28;
+}
+
+/* CARDS */
+.card {
+  float: left;
+  width: calc(33% - 10px);
+  margin: 20px 5px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(138, 43, 226, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card div {
+  padding: 25px;
+}
+.card h3 {
+  color: #8a2be2;
+  font-size: 18px;
+}
+.card .description {
+  color: #333;
+  font-size: 14px;
+}
+.social {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+.social .heart { background-image: url(images/heart.png); }
+.social .comment { background-image: url(images/comment.png); }
