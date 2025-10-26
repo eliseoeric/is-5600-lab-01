@@ -13,4 +13,184 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+/** Header **/
+header{
+   background-image: url('.images/florence.jpg');
+   background-size: cover;
+   min-height: 500px;
+   width: 100%; 
+}
+  
+:root{
+  --bg: #F0F4F8;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --brand: #2563eb;
+  --brand-dark:#1e40af;
+}
+
+html, body {
+  color: var(--text);
+}
+
+/* ---------- Top Navigation ---------- */
+#topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+#topbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+#topbar a {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #111827;
+  transition: opacity .2s ease, color .2s ease;
+}
+#topbar a:hover { color: var(--brand); }
+
+/* ---------- Hero ---------- */
+header {
+  /* full-bleed banner with image + soft overlay */
+  background:
+    linear-gradient(180deg, rgba(2,6,23,0.35), rgba(2,6,23,0.55)),
+    url("images/florence.jpg") center/cover no-repeat;
+  min-height: 56vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 4.5rem 1.25rem 5rem;
+  margin-bottom: 2rem;
+}
+header > div {
+  max-width: 900px;
+}
+header h2 {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+  line-height: 1.1;
+  margin-bottom: .75rem;
+}
+header p {
+  font-size: clamp(1rem, 1.2vw + .6rem, 1.25rem);
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+}
+header a {
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .8rem 1.25rem;
+  border-radius: .75rem;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+}
+header a:hover {
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.45);
+}
+
+/* ---------- Main / Cards Grid ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Card shell */
+.card {
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(2, 6, 23, 0.10);
+  border-color: #dbe3ea;
+}
+
+/* Card media */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card content */
+.card > div {
+  padding: 1rem 1rem 1.1rem;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: .35rem;
+}
+.card .description {
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: .75rem;
+}
+
+/* Social row (hearts + comments) */
+.card .social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #111827;
+  font-weight: 600;
+}
+.card .social span {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Icon bullets via ::before */
+.heart::before,
+.comment::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 1px 1px rgba(2,6,23,0.1));
+}
+.heart::before   { background-image: url("images/heart.svg"); }
+.comment::before { background-image: url("images/comment.svg"); }
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 1024px) {
+  main { grid-template-columns: repeat(2, 1fr); }
+  .card img { height: 190px; }
+}
+@media (max-width: 640px) {
+  main { grid-template-columns: 1fr; }
+  header { min-height: 48vh; padding: 3.5rem 1rem 3.75rem; }
+  .card img { height: 180px; }
+}
