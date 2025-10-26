@@ -1,16 +1,148 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+/* ---------- General Page Styles ---------- */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafc;
+  color: #333;
 }
 
-/* add styles here */
+/* ---------- Navigation Bar ---------- */
+#topbar {
+  background-color: #1e3a8a;
+  padding: 1rem 2rem;
+}
+
+#topbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Pill buttons */
+.nav-pill {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: transparent;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Text revealed using ::after */
+.nav-pill::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Hover effect */
+.nav-pill:hover {
+  background: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-pill:hover::after {
+  opacity: 1;
+}
+
+/* Active state (yellow pill) */
+.nav-pill.active {
+  background: #facc15;
+  border-color: #facc15;
+}
+
+.nav-pill.active::after {
+  opacity: 1;
+  color: #111827;
+}
+
+/* ---------- Hero Section ---------- */
+header div {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+header a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #1e3a8a;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background-color: #facc15;
+  color: #111827;
+}
+
+/* ---------- Cards ---------- */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card div {
+  padding: 1rem 1.5rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #1e3a8a;
+}
+
+.card p.description {
+  color: #555;
+  font-size: 0.95rem;
+}
