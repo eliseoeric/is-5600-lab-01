@@ -1,16 +1,112 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+/* ---------- Version 8: Sky Breeze ---------- */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #e0f7ff;
 }
 
-/* add styles here */
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  min-height: 520px;
+}
+
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  height: 90px;
+  padding: 20px;
+}
+
+nav ul {
+  margin-left: 90px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav a {
+  color: #005f99;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0099e6;
+}
+
+header div {
+  margin: 120px 0 0 100px;
+  color: white;
+}
+
+header h2 {
+  font-size: 48px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+header div a {
+  background-color: #0099e6;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+header div a:hover {
+  background-color: #0077b6;
+}
+
+.card {
+  float: left;
+  width: calc(33% - 10px);
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 153, 230, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card div {
+  padding: 20px;
+}
+
+.card h3 {
+  color: #005f99;
+}
+
+.card .description {
+  font-size: 13px;
+}
+
+.social {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+
+.social .heart {
+  background-image: url(images/heart.png);
+}
+
+.social .comment {
+  background-image: url(images/comment.png);
+}
