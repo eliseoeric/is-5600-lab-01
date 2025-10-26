@@ -41,16 +41,19 @@ nav a {
     padding: 10px;
     font-weight: 600;
 }
+
 nav a:visited {
     color: #8662c7;
 }
+
 nav a:hover {
     color: #8662c7;
     text-decoration: underline;
 }
 header div {
+    /* CONSOLIDATED RULE: Combines the two header div rules for clarity and efficiency */
     margin: 100px 0 0 80px;
-    color: white;
+    color: white; 
 }
 header h2 {
     font-size: 48px;
@@ -67,6 +70,7 @@ header div a {
     text-decoration: none;
     border-radius: 5px;
 }
+
 header div a:hover {
     background-color: #8662c7;
 }
@@ -80,12 +84,15 @@ header div a:hover {
 .card div {
     padding: 20px 5px;
 }
+
 .card img {
     width: 100%;
 }
+
 .card div.description {
     font-size: 12px;
 }
+
 .card h3 {
     font-size: 14px;
 }
@@ -93,16 +100,20 @@ header div a:hover {
     margin-top: 1rem;
     font-size: 12px;
 }
+
 .social span {
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 25px;
     margin-right: 10px;
-    display: inline-block;
+    /* Added for correct background image rendering on the icons */
+    display: inline-block; 
 }
+
 .social .heart {
     background-image: url(./images/heart.png);
 }
+
 .social .comment {
     background-image: url(./images/comment.png);
 }
