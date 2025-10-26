@@ -13,4 +13,140 @@ body {
    font-weight: 300;
 }
 
+
+/* Hero header with background image */
+header {
+  background: url("./images/florence.jpg") center/cover no-repeat;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("./images/logo.svg") no-repeat 10px 5px;
+  background-size: 60px;
+  padding: 20px;
+  height: 100px;
+}
+
+/* Navigation links container */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 80px;
+  padding: 0;
+}
+
+/* Navigation link items */
+nav li {
+  margin-right: 15px;
+}
+
+/* Navigation links styling */
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:visited {
+  color: #8662c7;
+}
+
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
+
+header div {
+  margin: 100px 0 0 80px;
+}
+
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+header div a {
+  display: inline-block;
+  background-color: #51279b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+header div a:hover {
+  background-color: #8662c7;
+}
+
+
+.card {
+  float: left;
+  width: calc(33.333% - 10px);
+  margin: 10px 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card div {
+  padding: 20px 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card .description {
+  font-size: 13px;
+  color: #444;
+}
+
+
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.social span {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+
+.social .heart {
+  background-image: url("./images/heart.png");
+}
+
+.social .comment {
+  background-image: url("./images/comment.png");
+}
+
 /* add styles here */
