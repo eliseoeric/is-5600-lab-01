@@ -1,16 +1,121 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+/* ---------- Version 11: Monochrome Glass ---------- */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #f0f0f0, #d9d9d9);
 }
 
-/* add styles here */
+/* HEADER */
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  min-height: 520px;
+  position: relative;
+  color: #fff;
+}
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* NAVIGATION */
+nav {
+  position: relative;
+  z-index: 1;
+  background-image: url(images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 15px 10px;
+  height: 90px;
+  padding: 25px;
+}
+nav ul {
+  margin-left: 90px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 0.5px;
+}
+nav a:hover {
+  color: #00e0ff;
+}
+
+/* HERO SECTION */
+header div {
+  position: relative;
+  z-index: 1;
+  margin: 140px 0 0 90px;
+}
+header h2 {
+  font-size: 50px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+header p {
+  font-size: 22px;
+  color: #eaeaea;
+}
+header div a {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+header div a:hover {
+  background: #00e0ff;
+  color: #000;
+}
+
+/* CARDS */
+.card {
+  float: left;
+  width: calc(33% - 10px);
+  margin: 20px 5px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card div {
+  padding: 20px;
+}
+.card h3 {
+  font-size: 16px;
+  color: #111;
+}
+.card .description {
+  font-size: 13px;
+  color: #333;
+}
+.social {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+.social .heart { background-image: url(images/heart.png); }
+.social .comment { background-image: url(images/comment.png); }
