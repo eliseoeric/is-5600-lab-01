@@ -1,16 +1,185 @@
+/* ----- Global Styles ----- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* add styles here */
+/* ----- Headings & Paragraphs ----- */
+h2, h3, p {
+    margin: 0;
+}
+
+/* ----- Header / Hero Section ----- */
+header {
+    background-image: url('./images/florence.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+    color: white;
+    position: relative;
+}
+
+
+header div.hero {
+    margin: 100px 0 0 80px;
+}
+
+header h2 {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Button */
+header div a.btn {
+    background-color: #51279b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+header div a.btn:hover {
+    background-color: #8662c7;
+}
+
+/* ----- Navigation Bar ----- */
+nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul {
+    margin-left: 80px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #51279b;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:visited {
+    color: #8662c7;
+}
+
+nav a:hover {
+    color: #8662c7;
+    text-decoration: underline;
+}
+
+/* ----- Cards Section ----- */
+main.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 80px;
+}
+
+.card {
+    flex: 0 1 calc(33.333% - 20px);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card div.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    color: #51279b;
+}
+
+.card .description {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ----- Social Icons ----- */
+.social {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.social span {
+    padding-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.social .heart {
+    background-image: url(images/heart.png);
+}
+
+.social .comment {
+    background-image: url(images/comment.png);
+}
+
+/* ----- Responsive ----- */
+@media screen and (max-width: 900px) {
+    .card {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        margin-left: 20px;
+        flex-direction: column;
+    }
+    header div.hero {
+        margin: 50px 20px;
+    }
+    .card {
+        flex: 0 1 100%;
+    }
+}
+
