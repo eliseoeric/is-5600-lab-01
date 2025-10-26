@@ -2,15 +2,250 @@
 * {
    box-sizing: border-box;
 }
+
+html {
+   scroll-behavior: smooth;
+}
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
+   line-height: 1.6;
 }
 
-/* add styles here */
+/* Header Styling */
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+}
+
+/* Navigation Styling */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+nav ul {
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 5px;
+}
+
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background-color: #8662c7;
+  transition: transform 0.3s ease;
+}
+
+nav a:visited {
+  color: #51279b;
+}
+
+nav a:hover {
+  color: #8662c7;
+  background-color: rgba(134, 98, 199, 0.1);
+  transform: translateY(-2px);
+}
+
+nav a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+nav a:active {
+  transform: translateY(0);
+}
+
+/* Hero Text Styling */
+header div {
+  margin: 100px 0 0 80px;
+  color: white;
+}
+
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Button Styling */
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(81, 39, 155, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+header div a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+header div a:hover {
+  background-color: #8662c7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(134, 98, 199, 0.5);
+}
+
+header div a:hover::before {
+  left: 100%;
+}
+
+header div a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(81, 39, 155, 0.4);
+}
+
+/* Card Styling */
+.card {
+  float: left;
+  display: inline-block;
+  width: calc(33.333% - 10px);
+  margin: 10px 5px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card div {
+  padding: 20px 5px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card div.description {
+  font-size: 12px;
+  color: #718096;
+  line-height: 1.6;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+/* Social Icons Styling */
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+  color: #4a5568;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 15px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.social span:hover {
+  transform: scale(1.1);
+  color: #51279b;
+}
+
+.social .heart {
+  background-image: url(./images/heart.png);
+}
+
+.social .comment {
+  background-image: url(./images/comment.png);
+}
+
+/* Bonus: Flexbox layout for cards */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+main .card {
+  float: none;
+  flex: 0 1 calc(33.333% - 10px);
+  margin: 0;
+}
