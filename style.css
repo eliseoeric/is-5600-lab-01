@@ -2,7 +2,7 @@
 * {
    box-sizing: border-box;
 }
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+body, section, header, div, p, h1, h2, h3, figure, figcaption {
    margin: 0;
    padding: 0;
 }
@@ -14,3 +14,104 @@ body {
 }
 
 /* add styles here */
+/* === Base / Reset === */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Open Sans", Arial, sans-serif;
+  color: #222;
+  background: #eef3f8;
+  line-height: 1.45;
+}
+a { color: #5a5ae6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+/* ===  Navigation ==== */
+nav {
+  background: #2f2f2f;
+}
+nav ul {
+  list-style: none;        
+  margin: 0;               
+  padding: 0;              
+  min-height: 72px;
+  display: flex;           
+  align-items: center;
+  justify-content: right; 
+    gap: 28px;
+}
+nav li { margin: 0; }
+nav a {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+nav a:hover { opacity: .85; }
+
+/* === Hero Section  === */
+.hero {
+  /* if you have an image path, set it here; otherwise solid color hero */
+  background: #1f1f1f url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+}
+.hero .container {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 56px 16px;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 0 8px 0;
+}
+.hero p { margin: 0 0 14px 0; }
+.hero .btn,
+.hero a.button,
+.hero a[href*="learn"] {
+  display: inline-block;
+  background: #5a5ae6;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.hero .btn:hover { filter: brightness(.94); }
+
+/* === Cards === */
+.main .container { padding: 32px 16px 56px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(30, 30, 30, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+.card .card-body {
+  padding: 14px 16px 18px;
+}
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.15rem;
+}
+.card p {
+  margin: 0 0 10px 0;
+  color: #444;
+  font-size: .98rem;
+}
