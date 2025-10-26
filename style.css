@@ -1,16 +1,151 @@
-
+/* RESET + GLOBAL */
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* add styles here */
+body {
+  background: #f7f7f7;
+  color: #2c2c2c;
+}
+
+/* NAVIGATION */
+#topbar {
+  background: #0a2a43;
+  padding: 12px 0;
+  border-bottom: 3px solid #ff9d23;
+}
+
+#topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+#topbar ul li a {
+  color: #e8e8e8;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#topbar ul li a:hover {
+  color: #ff9d23;
+}
+
+/* HERO SECTION */
+header {
+  height: 70vh;
+  background: linear-gradient(rgba(10, 42, 67, 0.5), rgba(10, 42, 67, 0.5)),
+              url("images/florence.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+header a {
+  margin-top: 30px;
+  
+  padding: 12px 35px;
+  background: #1abc9c;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a:hover {
+  background: #ffb952;
+}
+
+/* CARD GRID */
+main {
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  margin-top: -50px;
+}
+
+/* CARD DESIGN */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* CARD IMAGE */
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* CARD DETAILS */
+.card div {
+  padding: 18px 20px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: #0a2a43;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  gap: 18px;
+  font-size: 0.9rem;
+}
+
+.social span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.heart::before {
+  content: "❤";
+  color: #e63946;
+}
+
+.comment::before {
+  content: "💬";
+  color: #ff9d23;
+}
