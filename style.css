@@ -1,16 +1,48 @@
+/* ---------- Version 2: Blue Ocean ---------- */
+body { font-family: 'Segoe UI'; margin: 0; background: #eef8ff; }
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  min-height: 500px;
 }
 
-/* add styles here */
+nav {
+  background-image: url(images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: 15px 10px;
+  height: 90px;
+  padding: 20px;
+}
+
+nav ul { margin-left: 100px; }
+nav li { display: inline-block; list-style: none; }
+nav a {
+  color: #004e89; text-decoration: none; font-weight: bold; padding: 10px;
+}
+nav a:hover { color: #2a9df4; border-bottom: 2px solid #2a9df4; }
+
+header div { margin: 120px 0 0 100px; color: white; }
+header h2 { font-size: 46px; }
+header p { font-size: 22px; }
+header div a {
+  background: #0077cc; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none;
+}
+header div a:hover { background: #2a9df4; }
+
+.card {
+  float: left; width: calc(33% - 10px); margin: 10px; background: white;
+  border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.card img { width: 100%; border-radius: 8px 8px 0 0; }
+.card div { padding: 20px; }
+.card h3 { color: #004e89; font-size: 16px; }
+.card .description { font-size: 12px; }
+
+.social { margin-top: 10px; font-size: 12px; }
+.social span {
+  background-size: contain; background-repeat: no-repeat; padding-left: 25px; margin-right: 10px;
+}
+.social .heart { background-image: url(images/heart.png); }
+.social .comment { background-image: url(images/comment.png); }
