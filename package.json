@@ -1,13 +1,13 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "is-5600-lab-01",
+  "version": "1.0.0",
+  "description": "Lab 01 Home Page Prototype",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "npx live-server ."
   },
-  "devDependencies": {
-    "vite": "^2.9.9"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
