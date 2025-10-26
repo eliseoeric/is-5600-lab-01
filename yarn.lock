@@ -17,7 +17,7 @@ esbuild@^0.14.27:
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.39.tgz"
   integrity sha512-2kKujuzvRWYtwvNjYDY444LQIA3TyJhJIX3Yo4+qkFlDDtGlSicWgeHVJqMUP/2sSfH10PGwfsj+O2ro1m10xQ==
   optionalDependencies:
-    esbuild-android-64 "0.14.39"
+    esbuild-android-64 "0.14.39" 
     esbuild-android-arm64 "0.14.39"
     esbuild-darwin-64 "0.14.39"
     esbuild-darwin-arm64 "0.14.39"
@@ -123,3 +123,6 @@ vite@^2.9.9:
     rollup "^2.59.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+
+
