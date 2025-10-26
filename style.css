@@ -1,72 +1,96 @@
-
+/* Reset default browser styles */
 * {
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+
+/* Body setup */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* add styles here */
-/* Reset and base styles (already done above) */
-
-/* ========== NAVIGATION BAR ========== */
-.navbar {
-  background-color: #333;
-  padding: 15px;
+/* Navigation Bar */
+#topbar {
+  background-color: #004080;
+  color: white;
+  padding: 15px 0;
   text-align: center;
 }
 
-.navbar a {
+#topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#topbar a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-.navbar a:hover {
-  color: #ff9800;
+#topbar a:hover {
+  color: #ffcc00;
 }
 
-/* ========== HERO SECTION ========== */
+/* Hero Section */
 .hero {
-  background-image: url('images/hero.jpg');
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
   font-size: 2rem;
+  font-weight: 700;
 }
 
-/* ========== CARD SECTIONS ========== */
-.cards {
+/* Card Container */
+.card-container {
   display: flex;
-  justify-content: space-around;
-  margin: 40px;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1100px;
 }
 
+/* Individual Card */
 .card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   width: 30%;
-  padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.card h3 {
-  color: #333;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 15px 0 10px;
+  color: #004080;
 }
 
 .card p {
-  color: #666;
+  padding: 0 20px 20px;
+  color: #555;
 }
