@@ -1,16 +1,48 @@
+/* ---------- Version 5: Soft Pink ---------- */
+body { font-family: 'Poppins'; margin: 0; background: #fff0f5; }
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  min-height: 500px;
 }
 
-/* add styles here */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  height: 90px;
+  padding: 20px;
+}
+
+nav ul { margin-left: 100px; }
+nav li { display: inline-block; list-style: none; }
+nav a {
+  color: #b83280; text-decoration: none; font-weight: bold; padding: 10px;
+}
+nav a:hover { color: #f687b3; }
+
+header div { margin: 120px 0 0 100px; color: white; }
+header h2 { font-size: 48px; }
+header p { font-size: 22px; }
+header div a {
+  background: #b83280; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;
+}
+header div a:hover { background: #f687b3; }
+
+.card {
+  float: left; width: calc(33% - 10px); margin: 10px; background: white;
+  border-radius: 10px; box-shadow: 0 0 10px rgba(184,50,128,0.2);
+}
+.card img { width: 100%; border-radius: 10px 10px 0 0; }
+.card div { padding: 20px; }
+.card h3 { color: #b83280; font-size: 15px; }
+.card .description { font-size: 13px; }
+
+.social { margin-top: 10px; font-size: 12px; }
+.social span {
+  background-size: contain; background-repeat: no-repeat; padding-left: 25px; margin-right: 10px;
+}
+.social .heart { background-image: url(images/heart.png); }
+.social .comment { background-image: url(images/comment.png); }
