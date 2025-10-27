@@ -14,3 +14,259 @@ body {
 }
 
 /* add styles here */
+
+header {
+   background-image: url(images/florence.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   width: 100%;
+   min-height: 500px;
+   position: relative;
+}
+
+header::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(135deg, rgba(81, 39, 155, 0.2), rgba(134, 98, 199, 0.1));
+}
+
+nav {
+   background-image: url(images/logo.png);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+   position: relative;
+   z-index: 10;
+
+}
+
+nav li {
+   display: inline-block;
+   list-style-type: none;
+   margin: 0 5px;
+}
+
+nav ul {
+   margin-left: 80px;
+}
+
+nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px 15px;
+   font-weight: 600;
+   position: relative;
+   display: inline-block;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   border-radius: 4px;
+}
+
+nav a:visited {
+   color: #8662c7;
+}
+
+nav a:hover {
+   color: #8662c7;
+   background-color: rgba(134, 98, 199, 0.1);
+   text-decoration: none;
+   transform: scale(1.05);
+}
+
+header div {
+   margin: 100px 0 0 80px;
+   color: white;
+   position: relative;
+   z-index: 5;
+   max-width: 600px;
+}
+
+header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+   text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+   font-weight: 800;
+   line-height: 1.2;
+}
+
+header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+   font-weight: 400;
+}
+
+header div a {
+   background: linear-gradient(135deg, #51279b, #6d3bb8);
+   color: white;
+   padding: 12px 28px;
+   text-decoration: none;
+   border-radius: 25px;
+   display: inline-block;
+   transition: all 0.3s ease;
+   box-shadow: 0 6px 20px rgba(81, 39, 155, 0.4);
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+header div a:hover {
+   background: linear-gradient(135deg, #8662c7, #9d7dd4);
+   transform: translateY(-3px);
+   box-shadow: 0 10px 25px rgba(134, 98, 199, 0.5);
+}
+
+.card {
+   float: left;
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   position: relative;
+}
+
+.card::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 4px;
+   background: linear-gradient(90deg, #51279b, #8662c7);
+   transform: scaleX(0);
+   transition: transform 0.4s ease;
+}
+
+.card:hover::before {
+   transform: scaleX(1);
+}
+
+.card:hover {
+   transform: translateY(-15px) scale(1.02);
+   box-shadow: 0 15px 40px rgba(81, 39, 155, 0.2);
+}
+
+.card div {
+   padding: 20px 20px;
+}
+
+.card img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+   transition: all 0.5s ease;
+   filter: brightness(0.95);
+}
+
+.card:hover img {
+   transform: scale(1.1);
+   filter: brightness(1);
+}
+
+.card .description {
+   font-size: 12px;
+   color: #555;
+   line-height: 1.7;
+   margin-top: 8px;
+}
+
+.card h3 {
+   font-size: 14px;
+   font-weight: 600;
+   color: #51279b;
+   margin-bottom: 5px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+   display: flex;
+   align-items: center;
+   padding-top: 15px;
+   border-top: 1px solid #e0e0e0;
+}
+
+.social span {
+   background-size: 18px;
+   background-repeat: no-repeat;
+   background-position: left center;
+   padding-left: 25px;
+   margin-right: 15px;
+   color: #888;
+   font-weight: 400;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.social span:hover {
+   color: #51279b;
+   transform: translateX(3px);
+}
+
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}
+
+main::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+@media (max-width: 1024px) {
+   .card {
+      width: calc(50% - 10px);
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      min-height: 400px;
+   }
+   
+   nav {
+      height: auto;
+      padding-bottom: 10px;
+   }
+   
+   nav ul {
+      margin-left: 80px;
+   }
+   
+   nav li {
+      display: inline-block;
+      margin: 5px 2px;
+   }
+   
+   header div {
+      margin: 60px 30px 0 30px;
+   }
+   
+   header h2 {
+      font-size: 36px;
+   }
+   
+   header p {
+      font-size: 20px;
+   }
+   
+   .card {
+      width: calc(100% - 10px);
+      margin: 10px 5px;
+   }
+}
