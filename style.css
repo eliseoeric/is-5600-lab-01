@@ -14,3 +14,110 @@ body {
 }
 
 /* add styles here */
+
+nav {
+   background-image: url(https://github.com/eliseoeric/is-5600-lab-01/blob/main/images/florence.jpg?raw=true);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 20px;
+   height: 500px;
+   width: 100%;
+   position: relative;
+ }
+ nav li {
+   display: inline-block;
+   list-style-type: none;
+
+ }
+
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+
+ nav a:visited {
+   color: #8662c7;
+ }
+
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+
+ header div {
+   position: absolute;
+   top:50%;
+   left: 30%;
+   transform: translate(-50%,-50%);
+   color: white; 
+
+ }
+
+header h2 {
+ font-size: 48px;
+ margin-bottom: 0.5rem;
+}
+header p {
+ font-size: 24px;
+ margin-bottom: 1.5rem;
+}
+
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+
+ header div a:hover {
+     background-color: #8662c7;
+
+ }
+
+.card {
+
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+ }
+
+ .card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+}
+
+.card div.description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+ }
+
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px; 
+ }
+
+ .social .heart {
+   background-image: url(https://github.com/eliseoeric/is-5600-lab-01/blob/main/images/heart.png?raw=true);
+ }
+
+ .social .comment {
+   background-image: url(https://raw.githubusercontent.com/eliseoeric/is-5600-lab-01/b13a065893f06ee195d3c0fd78d90263f875abea/images/comment.svg);
+ }
