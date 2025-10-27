@@ -13,4 +13,143 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+nav {
+   background-image: url(images/logo.svg);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 6px 2px;
+   padding: 30px;
+   height: 80px;
+ }
+
+nav li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+nav ul {
+   margin-left: 40px;
+}
+
+nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+ 
+nav a:visited {
+   color: #8662c7;
+}
+ 
+nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+}
+
+/* Hero/ Header Section*/
+header {
+   background-image: url('images/florence.jpg');
+   background-size: cover;
+   min-height: 500px;
+   width: 100%
+}
+header div {
+   margin: 100px 0 0 80px;
+   color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+}
+header h2 {
+ font-size: 48px;
+ margin-bottom: 0.5rem;
+}
+header p {
+ font-size: 24px;
+ margin-bottom: 1.5rem;
+}
+
+/* We can to target header.div.a because if we target simply a, then these styles will affect our navigation links as well */
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+ 
+header div a:hover {
+     background-color: #8662c7;
+}
+
+/*Cards Section*/
+/* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+.card {
+   display: inline-block;
+   vertical-align: top;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   border-radius: 10px;
+}
+
+.card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.card .description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}
+
+.card:hover {
+   transform: scale(1.02);
+   transition: transform 0.2s ease;
+}
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+}
+ 
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px; 
+}
+ 
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+ 
+.social .comment {
+   background-image: url(./images/comment.png);
+}
+
+/*Flexbox*/
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 10px;
+   gap: 1px; /* handles spacing between cards cleanly */
+}
+
+.card {
+   flex: 0 0 calc(33% - 13px); /* 3 cards per row with gap accounted for */
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+}
