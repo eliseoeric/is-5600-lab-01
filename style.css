@@ -1,16 +1,30 @@
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+/* Make hero text visible on bright backgrounds */
+header > div {
+  color: #100e0e;
+  text-shadow: 2px 2px 6px rgba(24, 10, 10, 0.6);
 }
 
-/* add styles here */
+/* improve the hero button */
+header > div a {
+  display: inline-block;
+  background-color: #51279b;
+  color: #151414;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+header > div a:hover {
+  background-color: #eceaf1;
+}
+
+/* Add a soft shadow to the cards */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
