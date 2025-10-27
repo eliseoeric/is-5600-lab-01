@@ -124,7 +124,7 @@ header p {
 11. There is a button in the hero, so we need to style that next. The button is nothing more than an anchor tag with a background color, and some padding. We can also use the `:hover` pseudo-class to style the button when the user hovers over it.
 
 ```css
-/* We can to target header.div.a because if we taget simply a, then these styles will affect our navigation links as well */
+/* We can to target header.div.a because if we target simply a, then these styles will affect our navigation links as well */
 header div a {
   background-color: #51279b;
   color: white;
