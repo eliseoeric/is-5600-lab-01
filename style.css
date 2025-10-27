@@ -1,16 +1,149 @@
 
+/* =========================
+   Lab 01 - Home Page Styles
+   ========================= */
+
+/* Reset & base styles */
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* add styles here */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f6f8;
+  color: #222;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00b7ff;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background-image: url('images/florence.jpg'); /* Make sure hero.jpg exists */
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Cards Section ---------- */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  color: #00b7ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ---------- Footer (optional) ---------- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero {
+    height: 320px;
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+}
+
