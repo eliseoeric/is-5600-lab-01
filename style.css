@@ -14,3 +14,231 @@ body {
 }
 
 /* add styles here */
+
+header {
+  background-image: url(images/header-background.jpg); /* or whatever the actual image name is */
+  background-size: cover;
+  background-position: center; /* ensures the image is centered */
+  width: 100%;
+  min-height: 500px;
+}
+
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px; /* add space between menu items */
+}
+
+nav a {
+  text-decoration: none;       /* removes underline */
+  color: #ffffff;              /* link color (default) */
+  font-weight: bold;           /* makes text stand out */
+  font-size: 18px;
+  padding: 20px;
+}
+
+nav a:visited {
+  color: #d0d0d0;              /* color for visited links */
+}
+
+nav a:hover {
+  color: #ffcc00;              /* highlight color on hover */
+}
+
+nav ul {
+  float: right;
+  margin-top: 25px;
+}
+
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+nav ul {
+  float: right;
+  margin-top: 25px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav a:visited {
+  color: #d0d0d0;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav ul {
+  margin-left: 10px;
+}
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+nav ul {
+  margin-left: 80px; /* pushes list right of logo */
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav a:visited {
+  color: #d0d0d0;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav a {
+  color: #51279b;          /* default link color (deep purple) */
+  text-decoration: none;   /* removes underline */
+  padding: 10px;           /* adds clickable area */
+  font-weight: 600;        /* slightly bold for visibility */
+}
+
+nav a:visited {
+  color: #8662c7;          /* lighter shade for visited links */
+}
+
+nav a:hover {
+  color: #8662c7;          /* hover color matches visited */
+  text-decoration: underline; /* adds underline on hover */
+}
+
+nav a:active {
+  color: #2e0f6b;          /* darker shade when clicked */
+}
+
+header div {
+  margin: 00px 0 0 80px;
+}
+
+header div {
+  margin: 100px 0 0 80px;
+  color: white; /* applies white text color to all elements inside the div */
+}
+
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem; /* small space below heading */
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem; /* more space below paragraph */
+}
+
+/* We target header div a because targeting just 'a' would also affect navigation links */
+header div a {
+  background-color: #51279b; /* deep purple button */
+  color: white;              /* white text */
+  padding: 10px 20px;        /* spacing inside the button */
+  text-decoration: none;     /* removes underline */
+  border-radius: 5px;        /* rounded corners */
+  font-weight: 600;          /* slightly bold text */
+}
+
+header div a:hover {
+  background-color: #8662c7; /* lighter purple on hover */
+}
+
+/* Each .card represents a single content block (e.g., article, feature, or service) */
+.card {
+  float: left;                  /* aligns cards side-by-side */
+  display: inline-block;        /* keeps them inline while allowing block properties */
+  width: calc(33% - 10px);      /* makes 3 cards per row with small gaps */
+  margin: 10px 5px;             /* space between cards */
+  background-color: white;      /* white background for contrast */
+  border-radius: 8px;           /* slightly rounded corners (optional but nice) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}
+
+.card div {
+  padding: 20px 5px; /* space around the text inside each card */
+  text-align: left;  /* ensures all text is left-aligned */
+}
+
+.card img {
+  width: 100%;       /* makes the image fill the entire card width */
+  height: auto;      /* maintains aspect ratio */
+  display: block;    /* removes tiny gaps under images */
+}
+
+.card div.description {
+  font-size: 12px;   /* smaller font for descriptive text */
+  color: #333;       /* darker gray for readability */
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 14px;   /* slightly larger for subtitles or titles */
+  font-weight: 600;  /* medium bold for emphasis */
+  margin-bottom: 8px;
+}
+
+Let's add the icons for the comments and favorites. First, target the .social class selector. We'll add a margin top of 1rem, and set the font size to 12px per the mockup.
+Next, let's target both of the .social span elements. The styles between the comment and the heart icon are very similar, so we save some keystrokes by targeting the most generic selector. The only difference between the .heart and .comment elements are their background images. We'll need to set the background image size for the .social span to contain, and ensure the image does not repeat. We should also add a small padding to the left of the icons, so they are not right up against the text, and some small margin to the right of the icons, so they are not right up against each other.
+
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+}
+
+.social .heart {
+  background-image: url(./images/heart.png);
+}
+
+.social .comment {
+  background-image: url(./images/comment.png);
+}
