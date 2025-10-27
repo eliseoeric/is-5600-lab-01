@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 {
   "name": "IS 5600 - Lab 1",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainer/universal:2",
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
 
