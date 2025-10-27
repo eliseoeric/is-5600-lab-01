@@ -13,12 +13,16 @@ body {
 
 /* Header as hero */
 header {
-  background-image: url(images/hero.jpg);
+  background-image: url(images/florence.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
+  padding-left: 40px;
 }
 /* Navigation */
 nav {
@@ -68,13 +72,13 @@ header > div {
 header h2 {
   font-size: 48px;
   margin: 0 0 .5rem 0;
-  color: #222222; /* Dark bold text */
+  color: #ffffff !important;
 }
 
 header p {
   font-size: 24px;
   margin: 0 0 1.5rem 0;
-  color: #333333; /* Slightly softer dark text */
+  color: #ffffff !important;
 }
 
 header > div a {
