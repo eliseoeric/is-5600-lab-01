@@ -1,16 +1,174 @@
-
+/* Base */
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
 }
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F0F4F8;
+  font-weight: 300;
+  color: #1f1f1f;
+  line-height: 1.5;
 }
 
-/* add styles here */
+/* Header as hero */
+header {
+  background-image: url(images/florence.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-left: 40px;
+}
+/* Navigation */
+nav {
+  background-image: url(images/logo.svg); 
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin: 0 0 0 80px; /* push links to the right */
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 16px;
+}
+
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+}
+
+nav a:visited {
+  color: #8662c7;
+}
+
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
+/* Hero Section */
+header > div {
+  margin: 100px 0 0 80px; /* align with nav list */
+  max-width: 720px;
+  color: white;
+}
+
+header h2 {
+  font-size: 48px;
+  margin: 0 0 .5rem 0;
+  color: #ffffff !important;
+}
+
+header p {
+  font-size: 24px;
+  margin: 0 0 1.5rem 0;
+  color: #ffffff !important;
+}
+
+header > div a {
+  display: inline-block;
+  background-color: #51279b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+header > div a:hover {
+  background-color: #8662c7;
+}/* Cards layout */
+main {
+  padding: 40px 80px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual card */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: calc(33.333% - 20px);
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+/* Text inside cards */
+.card > div {
+  padding: 16px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #212121;
+}
+
+.card .description {
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: #555;
+}
+/* Social icons row */
+.social {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.social span {
+  background-size: 18px;
+  background-repeat: no-repeat;
+  padding-left: 22px;
+  margin-right: 12px;
+}
+
+.social .heart {
+  background-image: url(images/heart.png);
+}
+
+.social .comment {
+  background-image: url(images/comment.png);
+}
+@media (max-width: 900px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
