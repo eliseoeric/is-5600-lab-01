@@ -1,13 +1,10 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "lab01",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "live-server --port=5500 --open=index.html"
   },
   "devDependencies": {
-    "vite": "^2.9.9"
+    "live-server": "^1.2.2"
   }
 }
