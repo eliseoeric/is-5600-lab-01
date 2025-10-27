@@ -14,3 +14,126 @@ body {
 }
 
 /* add styles here */
+
+/* Step 4: Styling the header */
+header {
+   background-image: url(images/florence.jpg);
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+}
+
+/* Step 5: Adding the logo to navigation */
+nav {
+   background-image: url(images/logo.png);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+}
+
+/* Step 6: Styling the navigation links */
+nav li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+/* Step 7: Adjusting navigation margin */
+nav ul {
+   margin-left: 80px;
+}
+
+/* Step 8: Styling the links */
+nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+
+nav a:visited {
+   color: #8662c7;
+}
+
+nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+}
+
+
+/* Step 9 & 10: Positioning and styling the  text */
+header div {
+   margin: 100px 0 0 80px;
+   color: white;
+}
+
+header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+}
+
+header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+}
+
+/* Step 11: Styling the hero button */
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+header div a:hover {
+   background-color: #8662c7;
+}
+
+/* Step 12: Styling the cards */
+.card {
+   float: left;
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+}
+
+/* Step 13: Styling the card content */
+.card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+}
+
+.card .description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}
+
+/* Step 14: Adding icons for comments and favorites */
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+}
+
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+}
+
+.social .heart {
+   background-image: url(./images/heart.png);
+}
+
+.social .comment {
+   background-image: url(./images/comment.png);
+}
