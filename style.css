@@ -16,6 +16,7 @@ body {
 /* add styles here */
 * {
   box-sizing: border-box;
+  
 }
 
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
