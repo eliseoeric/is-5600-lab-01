@@ -1,58 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-   <title>Lab04</title>		
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-<header>
-   <nav id="topbar">
-      <ul>
-         <li><a href="#">HOME</a></li>
-         <li><a href="#">BROWSE</a></li>
-         <li><a href="#">DESTINATIONS</a></li>
-         <li><a href="#">FLIGHTS</a></li>
-         <li><a href="#">SEARCH</a></li>
-         <li><a href="#">ABOUT</a></li>
-      </ul>
-   </nav>
-   <div>
-      <h2>Now is the time to explore</h2>
-      <p>Visit the land of your dreams</p>
-      <a href="#">LEARN MORE</a>
-   </div>
-</header>  
+<meta charset="UTF-8">
+<title>Raviteja Mallela | Portfolio</title>
 
-<main>
-   <section class="card">
-      <img src="images/card1.jpg" alt="Nova Scotia" />
-      <div>
-         
-         <h3>Explore Nova Scotia</h3>
-         <p class="description">On board a small sailing ship leaving Lunenburg.</p>
-         <p class="social"><span class="heart">112</span><span class="comment">23</span></p>
-      </div>
-   </section>
-   <section class="card">
-      <img src="images/card2.jpg" alt="Santorini" />
-      <div>
-         
-         <h3>Dusk on Santorini</h3>
-         <p class="description">Devoted yourself to the sunset!.</p>
-         <p class="social"><span class="heart">2313</span><span class="comment">18</span></p>
-      </div>
-   </section>   
-   <section class="card">
-      <img src="images/card3.jpg" alt="Chicago" />
-      <div>
-         
-         <h3>Amsterdam Flower Market</h3>
-         <p class="description">The only floating flower market in the world.</p>
-         <p class="social"><span class="heart">14</span><span class="comment">5</span></p>
-      </div>
-   </section>   
-</main>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4b0082, #7b2cbf);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 4px solid white;
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARD */
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.full {
+    grid-column: span 2;
+}
+
+h2 {
+    color: #4b0082;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #4b0082;
+    color: white;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Raviteja Mallela</h1>
+    <p>Software Engineer | Networking & Systems Developer</p>
+    <img src="Raviteja Mallela.jpg" alt="Profile Photo">
+</header>
+
+<div class="container">
+
+    <div class="section full">
+        <h2>Objective</h2>
+        <p>Seeking a challenging role where I can contribute to organizational growth while enhancing my technical and professional skills, and becoming a valuable asset to the company.</p>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <ul>
+            <li>4+ years experience in software development</li>
+            <li>Strong in C, Data Structures, Linux, Networking</li>
+            <li>Experience in debugging, log analysis, and bug fixing</li>
+            <li>Knowledge of L2 & L3 networking concepts</li>
+            <li>Experience in Agile/Scrum environment</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>C & Data Structures</li>
+            <li>Networking (Socket Programming, IPC)</li>
+            <li>Protocols: TCP/IP, UDP, DHCP, OSPF, ICMP</li>
+            <li>Tools: Git, Jira, GDB, Valgrind</li>
+            <li>OS: Linux</li>
+        </ul>
+    </div>
+
+    <div class="section full">
+        <h2>Professional Experience</h2>
+        <p><strong>Software Engineer</strong> – Novitas Technologies Pvt. Ltd (Apr 2020 – Oct 2023)</p>
+        <ul>
+            <li>Worked on feature enhancements and bug fixing</li>
+            <li>Performed unit testing and code reviews</li>
+            <li>Collaborated with clients and team members</li>
+            <li>Handled real-time issue analysis and debugging</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Project 1</h2>
+        <p><strong>S12700E Switch – Huawei</strong></p>
+        <ul>
+            <li>Worked on core network switch development</li>
+            <li>Handled debugging and feature enhancement</li>
+            <li>Participated in testing and deployment</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Project 2</h2>
+        <p><strong>OPT9603 Multi-Layer Switch – ECI Telecom</strong></p>
+        <ul>
+            <li>Worked on multi-layer transport platform</li>
+            <li>Bug fixing and testing</li>
+            <li>Handled customer queries and issue resolution</li>
+        </ul>
+    </div>
+
+    <div class="section full">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science – Vignan’s University</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Email: ravitejamallela617@gmail.com | Phone: 314-393-4386</p>
+</footer>
+
 </body>
 </html>
