@@ -1,16 +1,46 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* add styles here */
+/* NAVBAR */
+#topbar {
+    background: #222;
+    padding: 15px;
+}
+
+#topbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#topbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 300px;
+    background: url('images/hero.jpg') center/cover no-repeat;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
