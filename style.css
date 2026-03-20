@@ -1,16 +1,68 @@
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+
+header {
+  background-image: url("images/florence.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
 }
 
-/* add styles here */
+nav {
+  background-image: url("images/logo.svg");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+nav ul {
+  margin-left: 80px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
+
+header div {
+  margin: 100px 0 0 80px;
+  color: white;
+}
+
+header h2 {
+  font-size: 48px;
+}
+
+header p {
+  font-size: 24px;
+}
+
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header div a:hover {
+  background-color: #8662c7;
+}
+
+nav a {
+  color: #51279b;
+  text-decoration: none;
+}
