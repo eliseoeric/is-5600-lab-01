@@ -91,3 +91,31 @@ main {
   color: #555;
   margin-bottom: 10px;
 }
+/* ===== Social Icons ===== */
+.card .social {
+  display: flex;
+  gap: 10px;
+}
+.card .social .heart,
+.card .social .comment {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #888;
+}
+.card .social .heart::before {
+  content: url('images/heart.png');
+  width: 16px;
+  height: 16px;
+}
+.card .social .comment::before {
+  content: url('images/comment.png');
+  width: 16px;
+  height: 16px;
+}
+
+/* ===== Card Hover ===== */
+.card:hover {
+  transform: translateY(-5px);
+}
