@@ -13,4 +13,17 @@ body {
    font-weight: 300;
 }
 
+
+#topbar{
+      background-color: aqua;
+      height: 50px;
+     
+}
+
+
+.topbaradjust{
+   display: flex;
+   justify-content: space-around;
+}
+
 /* add styles here */
