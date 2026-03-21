@@ -14,3 +14,76 @@ body {
 }
 
 /* add styles here */
+/* NAVBAR */
+#topbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 10px;
+}
+
+#topbar a {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #0a77ecc3;
+  color: white;
+  border-radius: 5px;
+}
+
+/* HERO */
+header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+header h2 {
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-bottom: 10px;
+}
+
+header a {
+  margin-top: 5px;
+  padding: 10px 20px;
+  background-color: #ff6600c8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* CARDS */
+main {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div {
+  padding: 15px;
+}
+
+/*HOVER EFFECT*/
+a:hover {
+  opacity: 0.8;
+}
