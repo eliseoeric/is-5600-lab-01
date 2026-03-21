@@ -34,3 +34,27 @@ body {
 #topbar ul li a:hover {
   color: #ffdd00;
 }
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('images/florence.jpg') no-repeat center/cover;
+  color: white;
+}
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+header a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffdd00;
+  color: #0077b6;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+}
