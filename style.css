@@ -1,16 +1,167 @@
-
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  box-sizing: border-box;
 }
 
-/* add styles here */
+body,
+section,
+header,
+div,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+figure,
+figcaption,
+a,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f4f8;
+  color: #102a43;
+  font-weight: 300;
+}
+
+/* NAVBAR */
+#topbar {
+  background-color: #102a43;
+  padding: 20px 40px;
+}
+
+#topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#topbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* HERO SECTION */
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+header > div {
+  position: absolute;
+  top: 230px; /* pushed below navbar */
+  left: 60px;
+  z-index: 2;
+  max-width: 600px;
+}
+
+header h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+header p {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+header > div a {
+  display: inline-block;
+  background-color: white;
+  color: #102a43;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 6px;
+}
+
+/* CARDS */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+figure {
+  background-color: white;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  padding: 18px;
+}
+
+figcaption h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #102a43;
+  margin-bottom: 10px;
+}
+
+figcaption p {
+  color: #486581;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+figcaption a {
+  color: #0f609b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  header > div {
+    top: 210px;
+    left: 30px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    width: 100%;
+    max-width: 500px;
+  }
+}
