@@ -14,3 +14,92 @@ body {
 }
 
 /* add styles here */
+/* add styles here */
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 400px;
+  background-image: url('hero.jpg'); /* change if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+/* Individual Card */
+.card {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Card Title */
+.card h3 {
+  margin-top: 15px;
+}
+
+/* Card Text */
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Responsive (optional but good) */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
