@@ -34,3 +34,32 @@ body {
    font-weight: 600;
    font-size: 14px;
 }
+/* HERO SECTION */
+header {
+   background: url("images/florence.jpg") no-repeat center/cover;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 60px;
+   color: white;
+}
+
+header h2 {
+   font-size: 36px;
+   font-weight: 800;
+}
+
+header p {
+   font-size: 18px;
+   margin: 10px 0;
+}
+
+header a {
+   background-color: #0077cc;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   width: fit-content;
+   border-radius: 5px;
+}
