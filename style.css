@@ -94,3 +94,22 @@ header div a:hover {
 .card h3 {
     font-size: 14px;
 }
+.social {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+}
+
+.social .heart {
+  background-image: url(./images/heart.png);
+}
+
+.social .comment {
+  background-image: url(./images/comment.png);
+}
