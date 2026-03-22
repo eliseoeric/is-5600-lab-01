@@ -47,3 +47,15 @@ nav a:hover {
 header div {
   margin: 100px 0 0 80px;
 }
+header div {
+    margin: 100px 0 0 80px;
+    color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+}
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
