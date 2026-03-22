@@ -30,15 +30,23 @@ header {
   min-height: 500px;
 }
 
-section {
-  display: flex;    
-  gap: 20px;      
-  padding: 20px;
+.card {
+  float: left;
+  width: calc(33% - 10px);
+  margin: 10px 5px;
+  background-color: white;
 }
-
-section img {
-  width: 30%;       
-  border-radius: 10px;
+.card img {
+  width: 100%;
+}
+.card h3 {
+  font-size: 14px;
+}
+.card div.description {
+  font-size: 12px;
+}
+.card div {
+    padding: 20px 5px;
 }
 
 nav a {
