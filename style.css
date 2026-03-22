@@ -22,3 +22,7 @@ nav {
   padding: 20px;
   height: 100px;
 }
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
