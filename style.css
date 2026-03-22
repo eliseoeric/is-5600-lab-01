@@ -14,3 +14,23 @@ body {
 }
 
 /* add styles here */
+/* NAVIGATION BAR */
+#topbar {
+   background-color: white;
+   padding: 15px 40px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#topbar ul {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   gap: 25px;
+}
+
+#topbar a {
+   text-decoration: none;
+   color: #333;
+   font-weight: 600;
+   font-size: 14px;
+}
