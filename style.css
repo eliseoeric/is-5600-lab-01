@@ -61,7 +61,8 @@ header p {
    margin-bottom: 1.5rem; 
 }
 header div a { 
-   background-color: purple; 
+   background-color: #51279B; 
+   text-decoration: none;
    color: white; 
    padding: 10px 20px; 
    border-radius: 5px; 
