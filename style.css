@@ -14,3 +14,124 @@ body {
 }
 
 /* add styles here */
+
+
+header {
+   background-image:
+   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+   url("images/florence.jpg");
+
+   height: 500px;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   position: relative;
+}
+
+
+#topbar ul {
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   padding: 20px;
+   gap: 25px;
+}
+
+#topbar a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   background-color: rgba(44,123,229,0.9);
+   padding: 10px 16px;
+   border-radius: 4px;
+}
+
+
+
+header div {
+   position: absolute;
+   left: 60px;
+   bottom: 80px;
+}
+
+header h2 {
+   font-size: 40px;
+   margin-bottom: 10px;
+}
+
+header p {
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+
+header a {
+   background-color: #2C7BE5;
+   color: white;
+   padding: 12px 22px;
+   text-decoration: none;
+   border-radius: 4px;
+}
+
+
+main {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px;
+   gap: 20px;
+}
+
+
+.card {
+   background: white;
+   width: 30%;
+   border-radius: 6px;
+   overflow: hidden;
+   box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.card img {
+   width: 100%;
+}
+
+
+.card div {
+   padding: 20px;
+}
+
+
+.card h3 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+
+.description {
+   color: gray;
+   margin-top: 10px;
+}
+
+
+.social {
+   margin-top: 15px;
+   font-size: 14px;
+   color: #777;
+}
+
+
+.social span {
+   margin-right: 18px;
+}
+
+
+.heart::before {
+   content: "❤ ";
+   color: crimson;
+}
+
+
+.comment::before {
+   content: "💬 ";
+}
