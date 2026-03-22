@@ -13,4 +13,109 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+/* =========================
+   Reset and base styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* =========================
+   Header and Navigation
+========================= */
+header {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+nav ul li:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   Card Section
+========================= */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
