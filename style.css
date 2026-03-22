@@ -73,12 +73,12 @@ header div a:hover {
     background-color: #8662c7;
 }
 /* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+
 .card {
-  float: left;
-  width: calc(33% - 10px);
-  margin: 10px 5px;
+  flex: 1 1 calc(33.33% - 15px);
   background-color: white;
 }
+
 .card div {
     padding: 20px 5px;
 }
@@ -112,4 +112,9 @@ header div a:hover {
 
 .social .comment {
   background-image: url(./images/comment.png);
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
