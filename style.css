@@ -1,16 +1,143 @@
-
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
 }
 
-/* add styles here */
+/* Navigation Bar */
+#topbar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+}
+
+#topbar ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   background-color: rgba(51,51,51,0.95);
+   padding: 15px 0;
+}
+
+#topbar li {
+   margin: 0 15px;
+}
+
+#topbar a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+/* Hero Section */
+header {
+   background-image: url("images/florence.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 420px;
+
+   color: white;
+   text-align: center;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   padding-top: 70px; /* space for navbar */
+}
+
+header h2 {
+   font-size: 2.4rem;
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+
+header p {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+
+header a {
+   background-color: #ff6b6b;
+   color: white;
+   padding: 12px 24px;
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: 600;
+}
+
+/* Main Layout */
+main {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   padding: 40px;
+}
+
+/* Cards */
+.card {
+   background-color: white;
+   width: 30%;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+   transition: transform 0.2s ease;
+}
+
+.card:hover {
+   transform: translateY(-6px);
+}
+
+.card img {
+   width: 100%;
+   display: block;
+}
+
+.card div {
+   padding: 15px;
+}
+
+.card h3 {
+   font-weight: 600;
+   margin-bottom: 8px;
+}
+
+.description {
+   margin: 10px 0;
+   color: #555;
+   font-size: 0.95rem;
+}
+
+/* Social Icons */
+.social {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 600;
+   margin-top: 10px;
+}
+
+.heart::before {
+   content: url("images/heart.png");
+   margin-right: 6px;
+   vertical-align: middle;
+}
+
+.comment::before {
+   content: url("images/comment.png");
+   margin-right: 6px;
+   vertical-align: middle;
+}
