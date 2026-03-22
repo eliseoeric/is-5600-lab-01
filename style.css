@@ -100,3 +100,19 @@ main {
    color: #666;
    margin-bottom: 15px;
 }
+/* SOCIAL ICONS */
+.social {
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+   color: #999;
+}
+
+.heart::before {
+   content: "❤ ";
+   color: red;
+}
+
+.comment::before {
+   content: "💬 ";
+}
