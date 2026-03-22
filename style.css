@@ -46,3 +46,6 @@ nav a {
   padding: 10px;
   font-weight: 600;
 }
+nav a:visited { 
+   color: purple; 
+}
