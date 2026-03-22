@@ -72,3 +72,10 @@ header div a {
 header div a:hover {
     background-color: #8662c7;
 }
+/* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+.card {
+  float: left;
+  width: calc(33% - 10px);
+  margin: 10px 5px;
+  background-color: white;
+}
