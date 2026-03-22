@@ -42,7 +42,8 @@ section img {
 }
 
 nav a {
-  color: blue;
+  color: #51279B;
+  text-decoration: none;
   padding: 10px;
   font-weight: 600;
 }
