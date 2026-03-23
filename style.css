@@ -74,3 +74,11 @@ header a {
    text-decoration: none;
    border-radius: 5px;
 }
+
+/* MAIN LAYOUT */
+main {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 40px;
+}
