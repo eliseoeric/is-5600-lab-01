@@ -1,16 +1,190 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+/* ================= RESET ================= */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* add styles here */
+/* ================= HEADER ================= */
+header {
+  background-image: url('images/florence.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ================= NAV ================= */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  background-image: url('images/logo.png');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 80px;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+nav a:visited {
+  color: #ccc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= OVERLAY ================= */
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+#overlay h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 600;
+}
+
+#overlay p {
+  margin: 10px 0;
+}
+
+#overlay a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* ================= MAIN ================= */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  flex: 1;
+  max-width: 300px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-content .description {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.social span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.heart::before {
+  content: "❤️";
+  margin-right: 5px;
+}
+
+.comment::before {
+  content: "💬";
+  margin-right: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #overlay h1 {
+    font-size: 32px;
+  }
+
+  #overlay p {
+    font-size: 14px;
+  }
+
+  #overlay a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
