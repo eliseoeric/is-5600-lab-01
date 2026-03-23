@@ -1,16 +1,153 @@
-
+/* Reset styles */
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
+/* Body */
 body {
    font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
 }
 
-/* add styles here */
+/* Header (Hero Image) */
+header {
+   background-image: url("images/florence.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 500px;
+}
+
+/* Top Navigation Bar */
+#topbar {
+   background-image: url("images/logo.svg");
+   background-repeat: no-repeat;
+   background-size: 60px;
+   background-position: 20px 15px;
+   height: 100px;
+   padding-top: 30px;
+}
+
+#topbar ul {
+   margin-left: 100px;
+}
+
+#topbar li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+#topbar a {
+   text-decoration: none;
+   color: #51279B;
+   font-weight: 600;
+   padding: 10px;
+}
+
+#topbar a:visited {
+   color: #8662C7;
+}
+
+#topbar a:hover {
+   color: #8662C7;
+   text-decoration: underline;
+}
+
+/* Hero Content */
+header div {
+   margin-left: 80px;
+   margin-top: 100px;
+   color: white;
+}
+
+header h2 {
+   font-size: 48px;
+   margin-bottom: 12px;
+}
+
+header p {
+   font-size: 24px;
+   margin-bottom: 24px;
+}
+
+header div a {
+   display: inline-block;
+   text-decoration: none;
+   background-color: #51279B;
+   color: white;
+   font-weight: 600;
+   padding: 12px 24px;
+   border-radius: 4px;
+}
+
+header div a:hover {
+   background-color: #8662C7;
+}
+
+/* Main Section */
+main {
+   padding: 30px 20px;
+}
+
+/* Cards Layout */
+.card {
+   float: left;
+   width: calc(33.33% - 20px);
+   margin: 10px;
+   background-color: white;
+   border-radius: 6px;
+   overflow: hidden;
+}
+
+.card img {
+   width: 100%;
+   display: block;
+}
+
+.card div {
+   padding: 20px 10px;
+}
+
+.card h3 {
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.description {
+   font-size: 12px;
+   margin-bottom: 12px;
+}
+
+/* Social Icons */
+.social {
+   font-size: 12px;
+}
+
+.social .heart {
+   background-image: url("images/heart.png");
+   background-repeat: no-repeat;
+   background-size: 16px;
+   padding-left: 22px;
+   margin-right: 15px;
+}
+
+.social .comment {
+   background-image: url("images/comment.png");
+   background-repeat: no-repeat;
+   background-size: 16px;
+   padding-left: 22px;
+}
+
+/* Clear floats */
+main::after {
+   content: "";
+   display: table;
+   clear: both;
+}
