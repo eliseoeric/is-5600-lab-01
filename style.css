@@ -14,3 +14,56 @@ body {
 }
 
 /* add styles here */
+/* NAVBAR */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* HERO SECTION */
+section.hero {
+  height: 400px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* CARDS CONTAINER */
+section.cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* INDIVIDUAL CARD */
+section.cards div {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* CARD TEXT */
+section.cards h3 {
+  margin-bottom: 10px;
+}
+
+section.cards p {
+  font-size: 14px;
+}
