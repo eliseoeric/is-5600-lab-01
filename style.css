@@ -1,7 +1,8 @@
-/* Reset */
+/* ================= RESET ================= */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* ================= HEADER ================= */
@@ -13,72 +14,100 @@ header {
   position: relative;
 }
 
-/* Overlay text on header */
-#overlay {
+header::before {
+  content: '';
   position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-#overlay h1 {
-  font-size: 48px;
-  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ================= NAV ================= */
 nav {
-  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
   display: flex;
   align-items: center;
-  height: 60px;
-
-  /* LOGO as background image (REQUIRED) */
+  background: transparent;
   background-image: url('images/logo.png');
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 40px;
 }
 
-/* Nav list */
 nav ul {
   list-style: none;
   display: flex;
-
-  /* REQUIRED margin-left */
   margin-left: 80px;
   padding: 0;
 }
 
-/* Nav links */
 nav li {
   margin-right: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
 }
 
-/* REQUIRED states */
 nav a:visited {
-  color: gray;
+  color: #ccc;
 }
 
 nav a:hover {
-  color: blue;
+  text-decoration: underline;
 }
 
-/* ================= CARDS ================= */
-section {
+/* ================= OVERLAY ================= */
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+#overlay h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 600;
+}
+
+#overlay p {
+  margin: 10px 0;
+}
+
+#overlay a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* ================= MAIN ================= */
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
 }
 
+/* ================= CARDS ================= */
 .card {
   width: 300px;
   margin: 15px;
@@ -86,33 +115,40 @@ section {
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Card image */
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .card img {
   width: 100%;
+  height: auto;
 }
 
-/* Card content */
 .card-content {
   padding: 15px;
 }
 
-.card-content h2 {
-  margin: 0;
+.card-content h3 {
+  margin: 0 0 10px 0;
   font-size: 20px;
+  font-weight: 600;
 }
 
-.card-content p {
+.card-content .description {
   font-size: 14px;
   color: #555;
+  margin: 0 0 10px 0;
 }
 
-/* ================= SOCIAL (REQUIRED) ================= */
 .social {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+  margin: 0;
 }
 
 .social span {
@@ -121,7 +157,6 @@ section {
   font-size: 14px;
 }
 
-/* Icons */
 .heart::before {
   content: "❤️";
   margin-right: 5px;
@@ -134,8 +169,21 @@ section {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  section {
+  main {
     flex-direction: column;
     align-items: center;
+  }
+
+  #overlay h1 {
+    font-size: 32px;
+  }
+
+  #overlay p {
+    font-size: 14px;
+  }
+
+  #overlay a {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
