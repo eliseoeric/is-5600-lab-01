@@ -1,16 +1,11 @@
 
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+/* HEADER (Hero Image) */
+
+header {
+  background-image: url("images/florence.jpg"); 
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
 }
 
-/* add styles here */
+
