@@ -14,3 +14,127 @@ body {
 }
 
 /* add styles here */
+/* NAVIGATION BAR */
+#topbar ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   background-color: #222;
+}
+
+#topbar li a {
+   display: block;
+   padding: 15px 20px;
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+#topbar li a:hover {
+   background-color: #444;
+}
+/* HERO SECTION */
+header {
+   background-image: url("images/florence.jpg");
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+   color: white;
+   padding: 100px 20px;
+}
+
+header h2 {
+   font-size: 2.5rem;
+   margin-bottom: 10px;
+}
+
+header p {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+
+header a {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #ff6b6b;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: 600;
+}
+
+header a:hover {
+   background-color: #ff4c4c;
+}
+/* MAIN LAYOUT */
+main {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   padding: 40px;
+}
+/* CARD STYLING */
+.card {
+   background-color: white;
+   width: 300px;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+   width: 100%;
+   display: block;
+}
+
+.card div {
+   padding: 15px;
+}
+
+.card h3 {
+   margin-bottom: 10px;
+}
+
+.description {
+   font-size: 0.9rem;
+   color: #666;
+   margin-bottom: 15px;
+}
+
+/* SOCIAL ICONS */
+.social {
+   display: flex;
+   gap: 15px;
+   font-size: 0.9rem;
+   color: #555;
+}
+
+.heart::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-image: url("images/heart.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 5px;
+}
+
+.comment::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-image: url("images/comment.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+   main {
+      flex-direction: column;
+      align-items: center;
+   }
+}
