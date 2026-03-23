@@ -109,7 +109,8 @@ main {
 
 /* ================= CARDS ================= */
 .card {
-  width: 300px;
+  flex: 1;
+  max-width: 300px;
   margin: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
