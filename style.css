@@ -1,4 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+}
 * {
    box-sizing: border-box;
 }
@@ -11,6 +19,9 @@ body {
    box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
+}
+body {
+  background-color: lightgray;
 }
 
 /* add styles here */
