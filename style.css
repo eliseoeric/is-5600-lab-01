@@ -8,4 +8,12 @@ header {
   min-height: 500px;
 }
 
-
+/* NAVIGATION */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  padding: 20px;
+  height: 100px;
+}
