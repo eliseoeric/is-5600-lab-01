@@ -1,16 +1,47 @@
-
-* {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
+/* Body styling */
 body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-/* add styles here */
+/* Navigation bar */
+#topbar ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+}
+
+#topbar ul li {
+  margin-right: 20px;
+}
+
+#topbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero section */
+header div {
+  height: 300px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* Cards container */
+section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Individual cards */
+section div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
