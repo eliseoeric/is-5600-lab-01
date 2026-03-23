@@ -36,3 +36,38 @@ body {
 #topbar a:hover {
     color: #ff9900;
 }
+/* ===== Hero Section ===== */
+header {
+    background-image: url('images/florence.jpg'); /* you already have this image */
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 60px;
+    color: white;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+header a {
+    background: #ff9900;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background: #cc7a00;
+}
