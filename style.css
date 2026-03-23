@@ -17,3 +17,31 @@ nav {
   padding: 20px;
   height: 100px;
 }
+
+/* NAV LIST ITEMS */
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* MOVE LINKS RIGHT OF LOGO */
+nav ul {
+  margin-left: 80px;
+}
+
+/* NAV LINKS */
+nav a {
+  color: #51279b;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+nav a:visited {
+  color: #8662c7;
+}
+
+nav a:hover {
+  color: #8662c7;
+  text-decoration: underline;
+}
