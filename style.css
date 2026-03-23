@@ -14,3 +14,39 @@ body {
 }
 
 /* add styles here */
+/* Navigation */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  background-color: lightgray;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Individual card */
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+}
+.hero {
+  background-color: pink;
+}
