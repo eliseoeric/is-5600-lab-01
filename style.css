@@ -66,3 +66,20 @@ header a {
    border-radius: 5px;
    font-weight: 600;
 }
+/* CARD */
+.card {
+   background-color: white;
+   border-radius: 8px;
+   overflow: hidden;
+   width: 300px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* MAIN LAYOUT */
+main {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 40px;
+}
+
+
