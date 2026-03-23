@@ -45,3 +45,33 @@ nav a:hover {
   color: #8662c7;
   text-decoration: underline;
 }
+
+/* HERO TEXT POSITION */
+header div {
+  margin: 100px 0 0 80px;
+  color: white;
+}
+
+/* HERO TEXT STYLING */
+header h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* HERO BUTTON */
+header div a {
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header div a:hover {
+  background-color: #8662c7;
+}
