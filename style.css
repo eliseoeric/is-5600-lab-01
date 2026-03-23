@@ -112,5 +112,20 @@ main {
    margin-bottom: 15px;
    color: #555;
 }
+/* SOCIAL SECTION */
+.social {
+   display: flex;
+   gap: 15px;
+   font-size: 14px;
+   color: #777;
+}
+
+.heart::before {
+   content: "❤️ ";
+}
+
+.comment::before {
+   content: "💬 ";
+}
 
 
