@@ -1,16 +1,205 @@
-
+/* Global dark mode base */
 * {
-   box-sizing: border-box;
-}
-body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
-   margin: 0;
-   padding: 0;
-}
-body {
-   font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
-   background-color: #F0F4F8;
-   font-weight: 300;
+  box-sizing: border-box;
 }
 
-/* add styles here */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #0f172a; /* deep navy */
+  color: #e2e8f0; /* soft gray */
+}
+
+/* Header */
+header {
+  background-image: url(images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 520px;
+  padding-bottom: 40px;
+  filter: brightness(0.6); /* darken image for contrast */
+}
+
+/* Navigation with logo */
+nav {
+  background-image: url(images/logo.svg);
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  padding: 25px;
+  min-height: 110px;
+  background-color: rgba(15, 23, 42, 0.8); /* translucent dark */
+  backdrop-filter: blur(6px);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+/* Nav link styling */
+nav a {
+  color: #93c5fd; /* soft blue */
+  text-decoration: none;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #60a5fa; /* brighter blue */
+  text-decoration: underline;
+}
+
+/* Hero text */
+.hero-content,
+header div {
+  margin: 50px 0 0 100px;
+  color: #f1f5f9; /* bright gray */
+}
+
+header h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  margin-bottom: 2rem;
+}
+
+/* Hero button */
+header div a {
+  background-color: #1e40af; /* deep blue */
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+header div a:hover {
+  background-color: #3b82f6; /* bright blue */
+}
+
+/* Cards container */
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 30px 15px;
+  overflow-x: auto;
+}
+
+/* Cards */
+.card {
+  flex: 0 0 320px;
+  max-width: 320px;
+  background-color: #1e293b; /* slate gray */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.85);
+}
+
+.card-content,
+.card div {
+  padding: 25px 15px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #93c5fd; /* soft blue */
+}
+
+.card .description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cbd5e1; /* light gray */
+}
+
+/* Social icons */
+.social {
+  margin-top: 1.2rem;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.social span {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 28px;
+  margin-right: 34px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social .heart {
+  background-image: url(./images/heart.png);
+  filter: invert(80%); /* make icons visible on dark bg */
+}
+
+.social .comment {
+  background-image: url(./images/comment.png);
+  filter: invert(80%);
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    margin-left: 80px;
+  }
+
+  header div {
+    margin: 40px 20px 0;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px;
+    min-height: auto;
+    background-position: 10px 10px;
+  }
+
+  nav ul {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header div {
+    margin: 30px 16px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
