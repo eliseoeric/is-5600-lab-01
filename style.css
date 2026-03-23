@@ -37,3 +37,40 @@ body {
    font-size: 14px;
 }
 
+/* HERO HEADER */
+header {
+   background-image: url("images/florence.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   position: relative;
+   color: white;
+}
+
+header div {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+header h2 {
+   font-size: 36px;
+   font-weight: 600;
+}
+
+header p {
+   margin: 10px 0;
+   font-size: 18px;
+}
+
+header a {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+}
