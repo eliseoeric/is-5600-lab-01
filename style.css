@@ -13,4 +13,358 @@ body {
    font-weight: 300;
 }
 
-/* add styles here */
+/* Header styling */
+header {
+   background-image: url('images/florence.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 600px;
+   position: relative;
+}
+
+/* Navigation styling */
+nav#topbar {
+   background-image: url('images/logo.png');
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 20px center;
+   height: 80px;
+   padding: 10px 30px;
+   position: relative;
+   z-index: 10;
+}
+
+nav#topbar ul {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+nav#topbar li {
+   margin-left: 40px;
+}
+
+nav#topbar a {
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 14px;
+   transition: color 0.3s;
+   letter-spacing: 0.5px;
+}
+
+nav#topbar a:hover {
+   color: #ff6b35;
+}
+
+/* Hero section styling */
+header > div {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
+   max-width: 700px;
+   padding: 0 20px;
+}
+
+header > div h2 {
+   font-size: 52px;
+   font-weight: 800;
+   margin-bottom: 25px;
+   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+   line-height: 1.1;
+}
+
+header > div p {
+   font-size: 26px;
+   font-weight: 400;
+   margin-bottom: 50px;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+   line-height: 1.4;
+}
+
+header > div a {
+   background-color: #ff6b35;
+   color: white;
+   padding: 18px 45px;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 16px;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+   border: 2px solid transparent;
+}
+
+header > div a:hover {
+   background-color: #e55a2b;
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Main content styling */
+main {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 30px;
+   padding: 80px 50px;
+   max-width: 1200px;
+   margin: 0 auto;
+   background-color: #F0F4F8;
+}
+
+/* Card styling */
+.card {
+   background: white;
+   border-radius: 12px;
+   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   position: relative;
+}
+
+.card:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.card:hover img {
+   transform: scale(1.05);
+}
+
+.card div {
+   padding: 30px;
+}
+
+.card h3 {
+   font-size: 24px;
+   font-weight: 600;
+   margin-bottom: 15px;
+   color: #333;
+   line-height: 1.3;
+}
+
+.card .description {
+   color: #666;
+   font-size: 16px;
+   line-height: 1.6;
+   margin-bottom: 25px;
+}
+
+.social {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 15px;
+   border-top: 1px solid #eee;
+}
+
+.social span {
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   color: #555;
+   font-size: 14px;
+}
+
+.heart::before {
+   content: '';
+   background-image: url('images/heart.png');
+   background-size: 20px 20px;
+   width: 20px;
+   height: 20px;
+   margin-right: 8px;
+   display: inline-block;
+}
+
+.comment::before {
+   content: '';
+   background-image: url('images/comment.png');
+   background-size: 20px 20px;
+   width: 20px;
+   height: 20px;
+   margin-right: 8px;
+   display: inline-block;
+}
+
+/* Responsive design */
+
+/* Tablet and smaller desktop */
+@media (max-width: 992px) {
+   main {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 70px 40px;
+      gap: 25px;
+   }
+
+   header > div h2 {
+      font-size: 46px;
+   }
+
+   header > div p {
+      font-size: 22px;
+   }
+
+   nav#topbar li {
+      margin-left: 25px;
+   }
+
+   nav#topbar a {
+      font-size: 13px;
+   }
+}
+
+/* Mobile landscape and tablet portrait */
+@media (max-width: 768px) {
+   main {
+      grid-template-columns: 1fr;
+      padding: 60px 30px;
+      gap: 40px;
+   }
+
+   .card {
+      margin-bottom: 0;
+   }
+
+   header > div h2 {
+      font-size: 42px;
+   }
+
+   header > div p {
+      font-size: 20px;
+   }
+
+   nav#topbar li {
+      margin-left: 20px;
+   }
+
+   nav#topbar a {
+      font-size: 13px;
+   }
+
+   nav#topbar {
+      padding: 10px 20px;
+   }
+
+   .card img {
+      height: 220px;
+   }
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) {
+   header {
+      min-height: 500px;
+   }
+
+   header > div {
+      top: 52%;
+      padding: 0 15px;
+   }
+
+   header > div h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+   }
+
+   header > div p {
+      font-size: 18px;
+      margin-bottom: 35px;
+   }
+
+   header > div a {
+      padding: 15px 35px;
+      font-size: 14px;
+   }
+
+   .card div {
+      padding: 25px 20px;
+   }
+
+   .card h3 {
+      font-size: 22px;
+   }
+
+   .card img {
+      height: 200px;
+   }
+
+   main {
+      padding: 50px 20px;
+      gap: 30px;
+   }
+
+   nav#topbar li {
+      margin-left: 15px;
+   }
+
+   nav#topbar a {
+      font-size: 12px;
+   }
+
+   nav#topbar {
+      height: 70px;
+      background-size: 50px;
+      background-position: 15px center;
+   }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+   header > div h2 {
+      font-size: 28px;
+   }
+
+   header > div p {
+      font-size: 16px;
+   }
+
+   header > div a {
+      padding: 12px 30px;
+      font-size: 13px;
+   }
+
+   .card div {
+      padding: 20px 15px;
+   }
+
+   .card h3 {
+      font-size: 20px;
+   }
+
+   .card .description {
+      font-size: 15px;
+   }
+
+   main {
+      padding: 40px 15px;
+   }
+
+   nav#topbar li {
+      margin-left: 10px;
+   }
+
+   nav#topbar a {
+      font-size: 11px;
+   }
+
+   nav#topbar {
+      padding: 8px 15px;
+   }
+}
