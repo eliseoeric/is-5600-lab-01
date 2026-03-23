@@ -75,3 +75,33 @@ header div a {
 header div a:hover {
   background-color: #8662c7;
 }
+
+/* CARDS LAYOUT (FLEXBOX VERSION) */
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  flex: 1;
+  margin: 10px 5px;
+  background-color: white;
+}
+
+/* CARD CONTENT */
+.card div {
+  padding: 20px 5px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div.description {
+  font-size: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+}
